@@ -1,33 +1,67 @@
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.index__hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.index__hero-image {
+  width: 100%;
+  height: 500px;
+}
+
+.index__hero-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.index__hero-logo {
+  background-color: #400101;
+  position: absolute;
+  top: 40vh;
+  left: 40vw;
+  padding: 10px 100px;
+  color: white;
 }
 
 .services {
   display: flex;
   flex-wrap: wrap;
   margin: 80px 0;
+  align-self: center;
 }
 
 .services__item {
-  width: 556px;
-  height: 812px;
+  width: 300px;
+  height: auto;
   background: white;
   border: 1px black solid;
   margin: 20px;
   position: relative;
+  padding-bottom: 20px;
+}
+
+.services__item img {
+  width: 100%;
+  height: auto;
 }
 
 .services__item-title {
   color: #261515;
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 400;
   margin: 20px;
 }
 
 .services__item-description {
   color: #400101;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   padding: 20px;
 }
