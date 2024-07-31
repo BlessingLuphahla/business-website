@@ -4,28 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marketing Page</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/projects.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__background"></div>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">About</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Projects</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
       <div class="header__title">Dynamic Digital Designs</div>
+      <nav class="nav">
+        <a href="index.html" class="nav__item">Home</a>
+        <a href="about.html" class="nav__item">About</a>
+        <a href="projects.html" class="nav__item">Projects</a>
+        <a href="contact.html" class="nav__item">Contact</a>
+      </nav>
     </header>
     <main class="main">
       <section class="hero">
@@ -64,24 +54,32 @@
         <div class="cta__button">Get a quote</div>
       </section>
     </main>
+    <!-- Footer Section -->
     <footer class="footer">
-      <div class="footer__background"></div>
-      <div class="footer__content">
-        <div class="footer__logo"></div>
+      <div class="footer__section footer__section--info">
+        <h3 class="footer__title">Dynamic Digital Designs</h3>
+        <p class="footer__text">
+          We are dedicated to innovation and excellence in digital solutions.
+          Contact us to learn more about how we can elevate your business.
+        </p>
+      </div>
+      <div class="footer__section footer__section--links">
+        <h3 class="footer__title">Quick Links</h3>
         <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">Privacy policy</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Terms and conditions</a>
-          </li>
+          <li><a href="#home" class="footer__link">Home</a></li>
+          <li><a href="#about" class="footer__link">About</a></li>
+          <li><a href="#projects" class="footer__link">Projects</a></li>
+          <li><a href="#contact" class="footer__link">Contact</a></li>
         </ul>
-        <div class="footer__contact">
-          <div class="footer__contact-item">Company</div>
-          <div class="footer__contact-item">Address</div>
-          <div class="footer__contact-item">Phone number</div>
-          <div class="footer__contact-item">Email</div>
-        </div>
+      </div>
+      <div class="footer__section footer__section--contact">
+        <h3 class="footer__title">Contact Us</h3>
+        <p class="footer__text">Email: info@dynamicdigital.com</p>
+        <p class="footer__text">Phone: +123 456 7890</p>
+      </div>
+      <div class="footer__section footer__section--legal">
+        <a href="#privacy-policy" class="footer__link">Privacy Policy</a>
+        <a href="#terms-conditions" class="footer__link">Terms & Conditions</a>
       </div>
     </footer>
   </body>
