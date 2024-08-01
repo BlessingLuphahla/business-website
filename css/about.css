@@ -28,6 +28,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  background-color: white;
 
 }
 
@@ -76,14 +77,6 @@
 
 /* Extra small devices (phones, less than 600px) */
 @media (max-width: 599px) {
-  .header__title {
-    font-size: 24px;
-  }
-
-  .nav__item {
-    font-size: 14px;
-    margin-left: 10px;
-  }
 
   .about-us {
     font-size: 24px;
@@ -110,14 +103,6 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (min-width: 600px) and (max-width: 767px) {
-  .header__title {
-    font-size: 28px;
-  }
-
-  .nav__item {
-    font-size: 16px;
-    margin-left: 10px;
-  }
 
   .about-us {
     font-size: 28px;
@@ -144,15 +129,6 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
-  .header__title {
-    font-size: 32px;
-  }
-
-  .nav__item {
-    font-size: 18px;
-    margin-left: 15px;
-  }
-
   .about-us {
     font-size: 32px;
     top: 320px;
@@ -178,15 +154,6 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .header__title {
-    font-size: 34px;
-  }
-
-  .nav__item {
-    font-size: 20px;
-    margin-left: 20px;
-  }
-
   .about-us {
     font-size: 36px;
     top: 340px;
@@ -212,15 +179,7 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .header__title {
-    font-size: 36px;
-  }
-
-  .nav__item {
-    font-size: 22px;
-    margin-left: 25px;
-  }
-
+ 
   .about-us {
     font-size: 40px;
     top: 360px;

@@ -176,23 +176,6 @@ body {
   margin-top: 20px;
 }
 
-.footer__section--legal {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footer__section--info {
-  display: flex;
-  flex-direction: row;
-  gap: 13px;
-}
-
-.footer__section--info .footer__text {
-  width: 30%;
-  flex-wrap: wrap;
-}
-
 /* Media Queries */
 @media (max-width: 768px) {
   .main-section__content {
