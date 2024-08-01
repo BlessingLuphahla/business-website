@@ -230,9 +230,11 @@ body {
     position: relative;
     left: -40px;
   }
+  
   .open-menu {
     display: flex;
   }
+
   .header {
     display: flex;
     justify-content: center;

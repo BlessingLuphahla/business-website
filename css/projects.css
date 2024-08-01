@@ -1,64 +1,70 @@
 /* Main Styles */
 .main {
-    padding: 45px 0;
+  padding: 45px 0;
 }
 
 .hero {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .hero__title {
-    font-size: 64px;
-    color: #261515;
+  font-size: 64px;
+  color: #261515;
+}
+
+.open-menu {
+  height: 50px;
+  width: 50px;
+  margin-top: 18px;
 }
 
 .hero__subtitle {
-    font-size: 24px;
-    color: #261515;
+  font-size: 24px;
+  color: #261515;
 }
 
 /* Services Styles */
 .services {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 30px;
 }
 
 .services__item {
-    width: 556px;
-    background: white;
-    border: 1px solid black;
-    padding: 20px;
-    margin-bottom: 20px;
+  width: 556px;
+  background: white;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .services__item-title {
-    font-size: 48px;
-    color: #261515;
+  font-size: 48px;
+  color: #261515;
 }
 
 .services__item-description {
-    font-size: 24px;
-    color: #400101;
-    text-align: center;
+  font-size: 24px;
+  color: #400101;
+  text-align: center;
 }
 
 /* CTA Styles */
 .cta {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
 }
 
 .cta__button {
-    width: 244px;
-    height: 66px;
-    background: #400101;
-    color: white;
-    text-align: center;
-    line-height: 66px;
-    font-size: 24px;
-    cursor: pointer;
+  width: 244px;
+  height: 66px;
+  background: #400101;
+  color: white;
+  text-align: center;
+  line-height: 66px;
+  font-size: 24px;
+  cursor: pointer;
 }
