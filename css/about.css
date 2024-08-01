@@ -1,16 +1,11 @@
-/* General styles */
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: #f8f9fa;
-}
 
-/* BEM Styles */
-.container {
+.container{
   width: 100%;
   max-width: 2487px;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-banner {
@@ -21,17 +16,26 @@ body {
 }
 
 .content {
-  width: 1981px;
-  background-color: white;
-  border: 1px solid black;
-  margin: 20px auto;
-  padding: 20px;
+  align-self: center;
+  width: 90%;
+  height: auto;
+  border: 1px black solid;
+  border-radius: 15px;
+  margin: 20px;
+  position: relative;
+  box-shadow: black 0px 0px 3px 2px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
 }
 
 .content__text {
   color: #400101;
   font-size: 24px;
   line-height: 1.5;
+  width: 80%;
 }
 
 .content__title {
@@ -42,12 +46,10 @@ body {
 
 .about-us {
   text-align: center;
-  color: white;
+  align-self: center;
+  color: black;
   font-size: 40px;
-  position: absolute;
-  top: 338px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 20px;
 }
 
 .contact-icon {
