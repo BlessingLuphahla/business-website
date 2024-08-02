@@ -3,15 +3,15 @@ const form = document.querySelector(".contact-form");
 
 const fName = form[0];
 const phone = form[1];
-const company = form[3];
 const email = form[2];
+const company = form[3];
 
 const message = `Hi Dynamic Digital Designs i am ${
   fName.value || "NO_NAME"
-} my Number is ${phone.value || "<XXXXXXXXX>"} my email is ${
+} my Number is ${phone.value || " <phone number> "} my email is ${
   email.value
 } i work in/for ${
-  company.value || "<Independent>"
+  company.value || " <company name> "
 } can you please send me your portfoilio`;
 const myEmail = "luphahlablessingthamsanqa@gmail.com";
 const subject = "request for portfoilio";

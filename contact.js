@@ -3,8 +3,8 @@ const form = document.querySelector(".contact-form");
 
 const fName = form[0];
 const phone = form[1];
-const company = form[3];
 const email = form[2];
+const company = form[3];
 
 const message = `Hi Dynamic Digital Designs i am ${
   fName.value || "NO_NAME"
