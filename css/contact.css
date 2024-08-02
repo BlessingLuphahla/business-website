@@ -1,6 +1,8 @@
 .main-section {
   padding: 5px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-section__title {
@@ -55,7 +57,6 @@
   border-radius: 50px;
   width: 120px;
   align-self: center;
-  
 }
 
 /* Media Queries */
@@ -66,14 +67,11 @@
   }
   .contact-form {
     width: 100%;
-    padding: 5px 25px;
+    padding: 10px 25px;
+    margin-right: 60px;
     height: 500px;
-    align-items: center;
-    justify-content: center;
-    justify-self: center;
     align-self: center;
-}
-
+  }
 }
 
 @media (max-width: 480px) {
@@ -89,14 +87,17 @@
   .contact-form__button {
     font-size: 18px;
   }
+
+  .contact-form__input {
+    height: 45px;
+    border-radius: 50px;
+  }
+
   .contact-form {
     width: 100%;
-    padding: 5px 25px;
+    padding: 10px 25px;
+    margin-right: 60px;
     height: 500px;
-    align-items: center;
-    justify-content: center;
-    justify-self: center;
     align-self: center;
-}
-
+  }
 }
