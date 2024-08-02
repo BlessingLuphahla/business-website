@@ -3,63 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects Page</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
-    <div class="header">
-      <div class="header__title">Dynamic Digital Designs</div>
-      <nav class="nav">
-        <a href="index.html" class="nav__item">Home</a>
-        <a href="about.html" class="nav__item">About</a>
-        <a href="projects.html" class="nav__item">Projects</a>
-        <a href="contact.html" class="nav__item">Contact</a>
-      </nav>
-      <img class="open-menu" src="images/ham-burger.svg" alt="zaz" />
-      <div class="hamburger-menu">
-        <a href="index.html" class="nav__item">Home</a>
-        <a href="about.html" class="nav__item">About</a>
-        <a href="projects.html" class="nav__item">Projects</a>
-        <a href="contact.html" class="nav__item">Contact</a>
-      </div>
-    </div>
-    <main class="main">
-      <section class="hero">
-        <h1 class="hero__title">Request our portfolio</h1>
-      </section>
-      <section class="form">
-        <div class="form__container">
-          <h2 class="form__title">Request Portfolio</h2>
-          <form class="form__elements">
-            <div class="form__group">
-              <label for="first-name" class="form__label">First Name</label>
-              <input type="text" id="first-name" class="form__input" />
-            </div>
-            <div class="form__group">
-              <label for="last-name" class="form__label">Last Name</label>
-              <input type="text" id="last-name" class="form__input" />
-            </div>
-            <div class="form__group">
-              <label for="phone-number" class="form__label">Phone number</label>
-              <input type="text" id="phone-number" class="form__input" />
-            </div>
-            <div class="form__group">
-              <label for="email-address" class="form__label"
-                >Email Address</label
-              >
-              <input type="email" id="email-address" class="form__input" />
-            </div>
-            <div class="form__group">
-              <label for="company" class="form__label">Company</label>
-              <input type="text" id="company" class="form__input" />
-            </div>
-            <button type="submit" class="form__button">Send</button>
-          </form>
+  <body class="main-container">
+      <div class="header">
+        <div class="header__title">Dynamic Digital Designs</div>
+        <nav class="nav">
+          <a href="index.html" class="nav__item">Home</a>
+          <a href="about.html" class="nav__item">About</a>
+          <a href="projects.html" class="nav__item">Projects</a>
+          <a href="contact.html" class="nav__item">Contact</a>
+        </nav>
+        <img class="open-menu" src="images/ham-burger.svg" alt="zaz" />
+        <div class="hamburger-menu">
+          <a href="index.html" class="nav__item">Home</a>
+          <a href="about.html" class="nav__item">About</a>
+          <a href="projects.html" class="nav__item">Projects</a>
+          <a href="contact.html" class="nav__item">Contact</a>
         </div>
+      </div>
+
+      <section class="main-section">
+        <div class="main-section__title">Request Our Portfoilio</div>
+
+        <div class="contact-form">
+          <div class="contact-form__input-group">
+            <label for="first-name" class="contact-form__label"
+              >First Name</label
+            >
+            <input type="text" id="first-name" class="contact-form__input" />
+          </div>
+          <div class="contact-form__input-group">
+            <label for="phone-number" class="contact-form__label"
+              >Phone number</label
+            >
+            <input type="text" id="phone-number" class="contact-form__input" />
+          </div>
+          <div class="contact-form__input-group">
+            <label for="email" class="contact-form__label">Email Address</label>
+            <input required type="email" id="email" class="contact-form__input" />
+          </div>
+          <div class="contact-form__input-group">
+            <label for="company" class="contact-form__label">Company</label>
+            <input type="text" id="company" class="contact-form__input" />
+          </div>
+        </div>
+        <button type="submit" class="contact-form__button">Send</button>
+
       </section>
-    </main>
-     <!-- Footer Section -->
-     <footer class="footer">
+
+    <!-- Footer Section -->
+    <footer class="footer">
       <img src="images/logo.svg" alt="logo" />
       <div class="footer__section footer__section--links">
         <h3 class="footer__title">Dynamic Digital Designs</h3>
@@ -87,7 +83,6 @@
         <p class="footer__text">Phone: +263 78 879 3302</p>
       </div>
       <div class="footer__section footer__section--sm">
-        <a href="mailto: luphahlablessingthamsanqa@gmail.com?subject=Business&body=Hey Dynamic Digital Design can you "
           ><img src="./images/gmail.svg" alt="gmail" />
         </a>
         <a href="https://www.linkedin.com/in/blessing-luphahla"
@@ -103,5 +98,6 @@
       </div>
     </footer>
     <script src="nav.js"></script>
+    <script defer src="request port.js"></script>
   </body>
 </html>

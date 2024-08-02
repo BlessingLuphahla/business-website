@@ -8,10 +8,10 @@ const message = `Hi Dynamic Digital Designs i am ${
   fName || "NO_NAME"
 } my Number is ${phone || "XXXXXXXXX"} my email is ${email} i work in/for ${
   company || "Independent"
-} I need help with my business`;
+} can you please send me your portfoilio`;
 const myEmail = "luphahlablessingthamsanqa@gmail.com";
 const subject =
-  "Help with business marketing web development and company mobile accessibity";
+  "request for portfoilio";
 
 send.addEventListener("click", function () {
   if (email && email.value) {
