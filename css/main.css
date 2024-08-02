@@ -9,10 +9,17 @@ body {
   background-color: #680000;
   width: 100%;
   height: 88px;
+  position:fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
 }
 
 .open-menu {
   display: none;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
 }
 
 .main-container {

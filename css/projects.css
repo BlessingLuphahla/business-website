@@ -22,12 +22,6 @@
   color: #680000;
 }
 
-.open-menu {
-  height: 50px;
-  width: 50px;
-  margin-top: 18px;
-}
-
 .hero__subtitle {
   font-size: 24px;
   color: #680000;
@@ -36,11 +30,12 @@
 .main-content {
   width: 95%;
   align-self: center;
-  padding: 15px 20px;
+  padding: 10px;
   border: 1px solid black;
   margin: 20px;
   background-color: white;
   box-shadow: black 0px 0px 3px 2px;
+  height: auto;
 }
 
 .main-content__details {
