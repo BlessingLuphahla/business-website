@@ -22,7 +22,7 @@ body {
 
 .hamburger-menu {
   display: none;
-  background-color: rgba(0, 0, 0, 0.578);
+  background-color: rgba(0, 0, 0, 0.8);
   flex-direction: column;
   position: absolute;
   width: 100%;
@@ -55,8 +55,8 @@ body {
 
 .nav__item {
   color: white;
-  font-size: 20px;
-  font-weight: 100;
+  font-size: 30px;
+  font-weight: 400;
   margin-left: 20px;
   text-decoration: none;
 }
