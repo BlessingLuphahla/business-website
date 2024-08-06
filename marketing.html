@@ -1,11 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marketing</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/aos/aos.css" />
+    <script src="css/aos/aos.js"></script>
+    <script src="css/aos/aos.cjs.js"></script>
+
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
+    <div
+      class="elfsight-app-ad2d0c0b-3522-4b50-a6aa-91f0c70727d6"
+      data-elfsight-app-lazy
+    ></div>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__title">Dynamic Digital Designs</div>
+      <nav class="nav">
+        <a href="index.html" class="nav__item">Home</a>
+        <a href="about.html" class="nav__item">About</a>
+        <a href="projects.html" class="nav__item">Projects</a>
+        <a href="contact.html" class="nav__item">Contact</a>
+      </nav>
+      <img class="open-menu" src="images/ham-burger.svg" alt="zaz" />
+      <div class="hamburger-menu">
+        <a href="index.html" class="nav__item">Home</a>
+        <a href="about.html" class="nav__item">About</a>
+        <a href="projects.html" class="nav__item">Projects</a>
+        <a href="contact.html" class="nav__item">Contact</a>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="hero">
+        <h1 class="hero__title">Marketing</h1>
+      </section>
+      <section class="services">
+        <div class="services__item">
+          <img src="images/dig mark.jpg" alt="digital marketing" />
+          <h2 class="services__item-title">Digital Marketing</h2>
+          <p class="services__item-description">
+            We offer comprehensive digital marketing services that strategically
+            leverage online channels to enhance your brand visibility, engage
+            your target audience, and drive measurable business growth.
+          </p>
+        </div>
+
+        <div class="services__item">
+          <img src="images/search.svg" alt="search engine optmisation" />
+          <h2 class="services__item-title">SEO Services</h2>
+          <p class="services__item-description">
+            We provide comprehensive SEO services designed to boost your
+            website's visibility, drive organic traffic, and enhance your search
+            engine rankings for sustained online success.
+          </p>
+        </div>
+
+        <div class="services__item">
+          <img src="images/email.svg" alt="" />
+          <h2 class="services__item-title">Email Marketing</h2>
+          <p class="services__item-description">
+            Our email marketing services are designed to create personalized,
+            engaging campaigns that nurture customer relationships, boost
+            conversions, and drive long-term brand loyalty.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <img src="images/logo.svg" alt="logo" />
+      <div class="footer__section footer__section--links">
+        <h3 class="footer__title">Dynamic Digital Designs</h3>
+        <ul class="footer__list">
+          <li>
+            <a href="privacy policy.html" class="footer__link"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a href="t's and c's.html" class="footer__link"
+              >Terms & Conditions</a
+            >
+          </li>
+          <li>
+            <a href="request port.html" class="footer__link"
+              >request our portfolio</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer__section footer__section--contact">
+        <h3 class="footer__title">Contact Us</h3>
+        <p class="footer__text">Email: luphahlablessinthamsanqa@gmail.com</p>
+        <p class="footer__text">Phone: +263 78 879 3302</p>
+      </div>
+      <div class="footer__section footer__section--sm">
+        <a
+          href="mailto: luphahlablessingthamsanqa@gmail.com?subject=Business&body=Hey Dynamic Digital Design can you "
+          ><img src="./images/gmail.svg" alt="gmail" />
+        </a>
+        <a href="https://www.linkedin.com/in/blessing-luphahla"
+          ><img src="./images/linkedin.svg" alt="linkedin" />
+        </a>
+        <a href="tel:+263788793302"
+          ><img src="./images/call.svg" alt="call" />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61561309891139&mibextid=ZbWKwL"
+          ><img src="./images/facebook.svg" alt="facebook" />
+        </a>
+      </div>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
+    <script src="nav.js"></script>
+
+    <style>
+      /* Services Styles */
+      .services {
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+        gap: 20px;
+      }
+
+      .services__item {
+        width: 500px;
+        background: white;
+        border: 1px solid black;
+        padding: 20px 40px;
+      }
+
+      .services__item img {
+        width: 95%;
+        height: auto;
+      }
+
+      .services__item-title {
+        font-size: 25px;
+        color: #680000;
+        text-align: center;
+      }
+
+      .intro__title {
+        text-align: center;
+        align-self: center;
+        font-size: 50px;
+      }
+
+      .services__item-description {
+        font-size: 20px;
+        color: #680000;
+        text-align: center;
+      }
+    </style>
+  </body>
 </html>

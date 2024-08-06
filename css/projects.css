@@ -21,45 +21,6 @@
   color: #680000;
 }
 
-/* Services Styles */
-.services {
-  display: flex;
-  justify-content: center;
-  margin: 0 20px;
-  gap: 20px;
-}
-
-.services__item {
-  width: 500px;
-  background: white;
-  border: 1px solid black;
-  padding: 20px 40px;
-  box-shadow: black 0px 0px 3px 2px;
-}
-
-.services__item img {
-  width: 95%;
-  height: auto;
-}
-
-.services__item-title {
-  font-size: 25px;
-  color: #680000;
-  text-align: center;
-}
-
-.intro__title {
-  text-align: center;
-  align-self: center;
-  font-size: 50px;
-}
-
-.services__item-description {
-  font-size: 20px;
-  color: #680000;
-  text-align: center;
-}
-
 /* CTA Styles */
 .cta {
   display: flex;
