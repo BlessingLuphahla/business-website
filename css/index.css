@@ -208,7 +208,7 @@ body {
   .services__item-description {
     text-align: center;
     text-wrap: wrap;
-    font-size: 18px;
+    font-size: 15px;
   }
   .services:first-child {
     margin-top: 55px;
@@ -253,7 +253,7 @@ body {
   .services__item-description {
     text-align: center;
     text-wrap: wrap;
-    font-size: 18px;
+    font-size: 15px;
   }
   .index__hero-logo {
     top: 28vh;
