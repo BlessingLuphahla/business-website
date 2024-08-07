@@ -48,10 +48,8 @@ body {
   height: 600px;
   background: white;
   border: 1px black solid;
-  border-radius: 15px;
   margin: 20px;
   position: relative;
-  padding: 10px;
 }
 
 .services__item:hover {
@@ -163,40 +161,37 @@ body {
 /* Media Queries */
 @media (max-width: 768px) {
   .services {
-    width: 95%;
     margin: 0;
     padding: 0;
     align-self: center;
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
   }
-
   .index__hero-image {
-    height: 300px;
-  }
+  height: 320px;
+}
 
-  .index__hero-logo {
-    top: 32vh;
-    left: 12vw;
-    padding: 10px 30px;
-    color: white;
-    border-radius: 400px;
-  }
+  
   .index__hero-logo img {
-    width: 90%;
-    height: 90%;
+    width: 100px;
+    height: 100px;
   }
-
+  
   .index__hero-logo p {
-    font-size: 5px;
-    margin-left: 20px;
+    font-size: 10px;
+    text-align: center;
   }
   .services__item {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
+    width: 100%;
+    height: auto;
   }
   .services__item img {
-    width: 350px;
+    width: 100%;
     height: 300px;
     align-self: center;
   }
@@ -210,36 +205,28 @@ body {
 
 @media (max-width: 480px) {
   .services {
-    width: 95%;
     margin: 0;
     padding: 0;
     align-self: center;
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
   }
-
   .index__hero-image {
-    height: 300px;
-  }
+  height: 320px;
+}
 
-  .index__hero-logo {
-    top: 32vh;
-    left: 12vw;
-    padding: 5px 40px;
-    color: white;
-    border-radius: 400px;
-  }
 
-  .index__hero-logo p {
-    font-size: 1px;
-    margin-left: 20px;
-  }
   .services__item {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
+    width: 100%;
+    height: auto;
   }
   .services__item img {
-    width: 350px;
+    width: 100%;
     height: 300px;
     align-self: center;
   }
@@ -248,5 +235,20 @@ body {
     text-align: center;
     text-wrap: wrap;
     font-size: 18px;
+  }
+  .index__hero-logo {
+    top: 33vh;
+    left: 22vw;
+    padding: 5px 60px;
+  }
+
+  .index__hero-logo img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .index__hero-logo p {
+    font-size: 10px;
+    text-align: center;
   }
 }
