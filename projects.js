@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = emailInput.value.trim();
     const company = companyInput.value.trim();
 
-    const subject = "New Contact Form Submission";
+    const subject = "Request For Portfolio";
     const body = `First Name: ${firstName}\nLast Name: ${lastName}\nPhone Number: ${phoneNumber}\nEmail: ${email}\nCompany: ${company}`;
 
     window.location.href = `mailto:luphahlablessingthamsanqa@gmail.com?subject=${encodeURIComponent(
