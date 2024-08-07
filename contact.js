@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showError(input, message) {
+    document.querySelector(".contact-form__error")?.remove();
     const errorElement = document.createElement("div");
     errorElement.classList.add("contact-form__error");
     errorElement.innerText = message;
@@ -62,7 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function clearError(input) {
-    const errorElement = input.parentElement.querySelector(".contact-form__error");
+    const errorElement = input.parentElement.querySelector(
+      ".contact-form__error"
+    );
     if (errorElement) {
       errorElement.remove();
     }
@@ -78,6 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const subject = "New Contact Form Submission";
     const body = `First Name: ${firstName}\nLast Name: ${lastName}\nPhone Number: ${phoneNumber}\nEmail: ${email}\nCompany: ${company}`;
 
-    window.location.href = `mailto:YOUR_EMAIL_ADDRESS_HERE?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:YOUR_EMAIL_ADDRESS_HERE?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
   }
 });
