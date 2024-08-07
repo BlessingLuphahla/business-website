@@ -169,15 +169,17 @@ body {
     width: fit-content;
   }
   .index__hero-image {
-  height: 320px;
-}
+    height: 320px;
+  }
+  .services__item:hover {
+    background: white;
+  }
 
-  
   .index__hero-logo img {
     width: 100px;
     height: 100px;
   }
-  
+
   .index__hero-logo p {
     font-size: 10px;
     text-align: center;
@@ -213,9 +215,12 @@ body {
     width: fit-content;
   }
   .index__hero-image {
-  height: 320px;
-}
+    height: 320px;
+  }
 
+  .services__item:hover {
+    background: white;
+  }
 
   .services__item {
     flex-direction: column;
@@ -237,7 +242,7 @@ body {
     font-size: 18px;
   }
   .index__hero-logo {
-    top: 33vh;
+    top: 27vh;
     left: 22vw;
     padding: 5px 60px;
   }
@@ -246,7 +251,7 @@ body {
     width: 100px;
     height: 100px;
   }
-  
+
   .index__hero-logo p {
     font-size: 10px;
     text-align: center;
