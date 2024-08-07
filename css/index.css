@@ -175,6 +175,12 @@ body {
     background: white;
   }
 
+  .index__hero-logo {
+    top: 28vh;
+    left: 22vw;
+    padding: 10px 60px;
+  }
+
   .index__hero-logo img {
     width: 100px;
     height: 100px;
@@ -204,7 +210,7 @@ body {
     text-wrap: wrap;
     font-size: 18px;
   }
-  .services:first-child  {
+  .services:first-child {
     margin-top: 55px;
   }
 }
@@ -218,7 +224,7 @@ body {
     width: -moz-fit-content;
     width: fit-content;
   }
-  .services:first-child  {
+  .services:first-child {
     margin-top: 55px;
   }
 
@@ -250,7 +256,7 @@ body {
     font-size: 18px;
   }
   .index__hero-logo {
-    top: 32vh;
+    top: 28vh;
     left: 22vw;
     padding: 10px 60px;
   }

@@ -8,6 +8,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
   top: 90px;
+  margin: 5px;
   margin-bottom: 150px;
 }
 
@@ -49,12 +50,12 @@
 }
 
 .contact-form__input:focus {
-  border-color: red;
+  border-color: #680000;
   outline: none;
 }
 
 .contact-form__button {
-  background-color: red;
+  background-color: #680000;
   color: white;
   padding: 10px;
   border: none;
@@ -66,7 +67,7 @@
 }
 
 .contact-form__button:hover {
-  background-color: darkred;
+  background-color: dark#680000;
 }
 
 /* Media Queries */
