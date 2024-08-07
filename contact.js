@@ -1,24 +1,23 @@
-const send = document.querySelector(".contact-form__button");
-const form = document.querySelector(".contact-form");
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
 
-const fName = form[0];
-const phone = form[1];
-const email = form[2];
-const company = form[3];
+  let valid = true;
 
-const message = `Hi Dynamic Digital Designs i am ${
-  fName.value || "NO_NAME"
-} my Number is ${phone.value || "<XXXXXXXXX>"} my email is ${
-  email.value
-} i work in/for ${
-  company.value || "<Independent>"
-} I need help with my business`;
-const myEmail = "luphahlablessingthamsanqa@gmail.com";
-const subject =
-  "Help with business marketing web development and company mobile accessibity";
+  const inputs = document.querySelectorAll('.contact-form__input');
+  inputs.forEach(input => {
+    if (!input.checkValidity()) {
+      input.style.borderColor = 'red';
+      valid = false;
+    } else {
+      input.style.borderColor = '#ddd';
+    }
+  });
 
-form.addEventListener("submit", function () {
-  if (email && email.value && phone.value && company.value && email.value) {
-    window.location.href = `mailto: ${myEmail}?subject=${subject}&body=${message}`;
+  if (valid) {
+    alert('Form submitted successfully!');
+    // You can handle the form submission here, e.g., send data to a server
+    document.getElementById('contact-form').reset();
+  } else {
+    alert('Please fill in all required fields correctly.');
   }
 });

@@ -34,32 +34,32 @@
         </div>
       </div>
 
+     
       <section class="main-section">
         <div class="main-section__title">Contact Us</div>
-
-        <form action="forms/contact.jsx" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-            </div>
+        <form class="contact-form" id="contact-form">
+          <div class="contact-form__input-group">
+            <label for="first-name" class="contact-form__label">First Name</label>
+            <input type="text" id="first-name" class="contact-form__input" required>
           </div>
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          <div class="contact-form__input-group">
+            <label for="last-name" class="contact-form__label">Last Name</label>
+            <input type="text" id="last-name" class="contact-form__input" required>
           </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          <div class="contact-form__input-group">
+            <label for="phone-number" class="contact-form__label">Phone Number</label>
+            <input type="text" id="phone-number" class="contact-form__input" required>
           </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
+          <div class="contact-form__input-group">
+            <label for="email" class="contact-form__label">Email Address</label>
+            <input type="email" id="email" class="contact-form__input" required>
           </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="contact-form__input-group">
+            <label for="company" class="contact-form__label">Company</label>
+            <input type="text" id="company" class="contact-form__input">
+          </div>
+          <button type="submit" class="contact-form__button">Send</button>
         </form>
-
       </section>
 
     <!-- Footer Section -->
