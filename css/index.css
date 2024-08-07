@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: Poppins, sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -74,6 +73,7 @@ body {
   font-size: 18px;
   text-align: center;
   padding: 20px;
+  font-family: Roboto-Regular;
 }
 
 .cta {
@@ -183,6 +183,7 @@ body {
   .index__hero-logo p {
     font-size: 10px;
     text-align: center;
+    font-family: Roboto-Bold;
   }
   .services__item {
     flex-direction: column;
@@ -203,6 +204,9 @@ body {
     text-wrap: wrap;
     font-size: 18px;
   }
+  .services:first-child  {
+    margin-top: 55px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -214,6 +218,10 @@ body {
     width: -moz-fit-content;
     width: fit-content;
   }
+  .services:first-child  {
+    margin-top: 55px;
+  }
+
   .index__hero-image {
     height: 320px;
   }
@@ -242,9 +250,9 @@ body {
     font-size: 18px;
   }
   .index__hero-logo {
-    top: 35vh;
+    top: 32vh;
     left: 22vw;
-    padding: 5px 60px;
+    padding: 10px 60px;
   }
 
   .index__hero-logo img {
@@ -255,5 +263,6 @@ body {
   .index__hero-logo p {
     font-size: 10px;
     text-align: center;
+    font-family: Roboto-Bold;
   }
 }
