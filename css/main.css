@@ -209,6 +209,10 @@ body {
   margin-top: 30px;
 }
 
+.active {
+  text-decoration: underline solid #ffffff 2px;
+}
+
 @-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
