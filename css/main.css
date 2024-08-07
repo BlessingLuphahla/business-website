@@ -35,9 +35,9 @@ body {
 
 .open-menu {
   display: none;
-  width: 55px;
-  height: 55px;
-  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: 23px;
 }
 
 .main-container {
