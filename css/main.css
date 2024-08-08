@@ -2,9 +2,9 @@
   /* setting up constants */
 
   --dark-red: #770505;
-  --body-bg: rgba(24,24,32,0.15);
+  --body-bg: rgba(163, 163, 163, 0.6);
   --border: 1px solid black;
-  --container-bg: #ffffff;
+  --container-bg: rgba(24, 24, 32, 0.02);
   --hamburger-bg: var(--dark-red);
   --header-height: 70px;
   --header-title-font-size: 20px;
@@ -258,6 +258,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  background-color: rgb(163, 163, 163);
 }
 
 .preview-content {
