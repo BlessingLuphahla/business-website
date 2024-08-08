@@ -22,7 +22,8 @@
   background: var(--container-bg);
   border: var(--border);
   box-shadow: var(--box-shadow);
-  margin: 20px;
+  margin: 30px;
+  padding: 10px;
   position: relative;
   align-self: center;
 }
