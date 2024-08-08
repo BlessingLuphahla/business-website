@@ -20,8 +20,8 @@
   --width: 180px;
   --height: 200px;
   color: white;
-  --py:10px;
-  padding:var(--py) 100px;
+  --py: 10px;
+  padding: var(--py) 100px;
   border-radius: 25px;
   position: absolute;
   width: var(--width);
@@ -84,7 +84,6 @@
   font-family: Roboto-Regular;
   margin: 0;
 }
-
 
 /* General Styles */
 
@@ -149,23 +148,24 @@
     font-size: 15px;
     margin-bottom: 20px;
   }
+
   .index__hero-logo {
     --width: 100px;
     --height: 100px;
-    --py: 50px;
-    padding: 10px var(--py);
+    --py: 20px;
+    --px: 10px;
+    padding: var(--px) var(--py);
     border-radius: 5px;
     position: absolute;
     width: var(--width);
     height: var(--height);
     background-color: var(--dark-red);
-    top: calc(var(--hero-image-height) - calc((var(--height) + var(--py)) / 2));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    top: calc(
+      var(--hero-image-height) - calc((var(--height) + var(--py)) / 2) -
+        var(--py) / 2
+    );
+    left: calc(50vw - calc(var(--width) - calc(var(--px) * 2.2)));
   }
-
   .index__hero-logo img {
     width: 100px;
     height: 100px;
@@ -175,6 +175,9 @@
     font-size: 10px;
     text-align: center;
     font-family: Roboto-Bold;
+  }
+  .services__item--software {
+    margin-bottom: calc(var(--header-height) + 20px);
   }
 }
 
@@ -226,21 +229,23 @@
     text-wrap: wrap;
     font-size: 15px;
   }
+
   .index__hero-logo {
     --width: 100px;
     --height: 100px;
-    --py: 50px;
-    padding: 10px var(--py);
+    --py: 20px;
+    --px: 10px;
+    padding: var(--px) var(--py);
     border-radius: 5px;
     position: absolute;
     width: var(--width);
     height: var(--height);
     background-color: var(--dark-red);
-    top: calc(var(--hero-image-height) - calc((var(--height) + var(--py)) / 2));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    top: calc(
+      var(--hero-image-height) - calc((var(--height) + var(--py)) / 2) -
+        var(--py) / 2
+    );
+    left: calc(50vw - calc(var(--width) - calc(var(--px) * 2.2)));
   }
 
   .index__hero-logo img {
@@ -252,5 +257,8 @@
     font-size: 10px;
     text-align: center;
     font-family: Roboto-Bold;
+  }
+  .services__item--software {
+    margin-bottom: calc(var(--header-height) + 20px);
   }
 }
