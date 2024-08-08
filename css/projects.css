@@ -84,8 +84,11 @@
 }
 
 .contact-form__error {
-  color: var(--dark-red);
+  color:rgb(0, 153, 255);
+  font-weight: 600;
+  margin: 5px;
 }
+
 
 .checkbox-group {
   display: flex;
