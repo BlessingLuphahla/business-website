@@ -20,13 +20,14 @@
   --width: 180px;
   --height: 200px;
   color: white;
-  padding: 10px 100px;
+  --py:10px;
+  padding:var(--py) 100px;
   border-radius: 25px;
   position: absolute;
   width: var(--width);
   height: var(--height);
   background-color: var(--dark-red);
-  top: calc(var(--hero-image-height) - calc(var(--height) / 2));
+  top: calc(var(--hero-image-height) - calc(var(--height) / 2) - var(--py));
   left: calc(50vw - var(--width));
   display: flex;
   align-items: center;
