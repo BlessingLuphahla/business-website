@@ -5,6 +5,9 @@
   width: 85%;
   align-self: center;
   justify-self: center;
+  position: relative;
+  top: var(--header-height);
+  margin-bottom:calc(var(--header-height) + 5px) ;
   border: var(--border);
   background-color: var(--container-bg);
 }
@@ -71,7 +74,6 @@
   top: 33px; /* Adjust as necessary to center the image */
 }
 
-
 .terms__list {
     display: flex;
     flex-direction: column;
@@ -81,6 +83,7 @@
 
 .terms__title {
   font-size: 25px;
+  text-align: center;
 }
 
 .terms__section-title {
