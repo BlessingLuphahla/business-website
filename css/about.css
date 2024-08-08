@@ -22,8 +22,8 @@
   border:var(--border);
   box-shadow: var(--box-shadow);
   border-radius: 15px;
-  top: 120px;
-  margin-bottom: 200px;
+  top: calc(var(--header-height) + 10px);
+  margin-bottom: calc(var(--header-height) + 10px);
   position: relative;
   padding: 10px;
   text-align: center;
