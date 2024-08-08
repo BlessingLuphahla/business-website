@@ -67,7 +67,7 @@
 }
 
 .services__item-title {
-  color: #261515;
+  color: var(--dark-red);
   font-size: 28px;
   font-weight: 400;
   margin: 20px;
@@ -75,7 +75,7 @@
 }
 
 .services__item-description {
-  color: #400101;
+  color: var(--dark-red);
   font-size: 15px;
   text-align: center;
   padding: 20px;
@@ -91,7 +91,7 @@
 .cta__box {
   width: 244px;
   height: 66px;
-  background: #400101;
+  background: var(--dark-red);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,7 +111,7 @@
 .cta-quote__box {
   width: 244px;
   height: 66px;
-  background: #400101;
+  background: var(--dark-red);
   display: flex;
   align-items: center;
   justify-content: center;
