@@ -2,11 +2,12 @@
   /* setting up constants */
 
   --dark-red: #680000;
-  --body-bg: rgba(255, 0, 0, 0.2);
+  --body-bg: rgba(72, 72, 72, 0.255);
   --border:1px solid black;
   --container-bg:#ffffff;
   --hamburger-bg:rgb(73, 8, 8);
   --header-height:88px;
+  --box-shadow:black 0px 0px 5px;
 }
 
 @font-face {

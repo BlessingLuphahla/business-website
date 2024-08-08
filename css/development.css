@@ -27,6 +27,7 @@
     text-align: left;
     font-size: 18px;
     border: var(--border);
+    box-shadow: var(--box-shadow);
   }
 
   /* Media Queries */

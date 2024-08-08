@@ -41,6 +41,7 @@
   height: 600px;
   background: var(--container-bg);
   border: var(--border);
+  box-shadow: var(--box-shadow);
   margin: 20px;
   position: relative;
 }
@@ -61,7 +62,7 @@
 
 .services__item-description {
   color: #400101;
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
   padding: 20px;
   font-family: Roboto-Regular;

@@ -1,6 +1,7 @@
 .main {
   background: var(--container-bg);
   border: var(--border);
+  box-shadow: var(--box-shadow);
   margin: 10px;
   position: relative;
   top: var(--header-height);
