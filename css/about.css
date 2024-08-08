@@ -21,7 +21,6 @@
   height: auto;
   border:var(--border);
   box-shadow: var(--box-shadow);
-  border-radius: 15px;
   top: calc(var(--header-height) + 10px);
   margin-bottom: calc(var(--header-height) + 10px);
   position: relative;
@@ -57,7 +56,6 @@
   width: 157px;
   height: 157px;
   background-color: #bf2626;
-  border-radius: 9999px;
   position: absolute;
   top: 1946px;
   left: 2267px;

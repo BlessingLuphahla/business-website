@@ -22,7 +22,6 @@
   left: 40vw;
   padding: 10px 120px;
   color: white;
-  border-radius: 400px;
 }
 
 .index__hero-logo p {
@@ -119,7 +118,6 @@
   width: 157px;
   height: 157px;
   background: #bf2626;
-  border-radius: 9999px;
   margin-right: 20px;
 }
 
@@ -137,7 +135,6 @@
   text-transform: lowercase;
   color: white;
   font-weight: 700;
-  border-radius: 50px;
   padding: 10px 20px;
 }
 

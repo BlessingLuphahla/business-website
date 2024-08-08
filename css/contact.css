@@ -4,13 +4,11 @@
   padding: 20px;
   width: 95%;
   max-width: 99%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
   top:var(--header-height);
   margin: 5px;
   margin-bottom: calc(var(--header-height) + 10px);
   border: var(--border);
-  box-shadow: var(--box-shadow);
   margin-top: 60px;
   align-self: center;
   margin-bottom: calc(var(--header-height) + 120px);
@@ -45,8 +43,6 @@
   width: 100%;
   padding: 10px;
   border: var(--border);
-  box-shadow: var(--box-shadow);
-  border-radius: 4px;
   font-size: 16px;
   color: black;
   background-color: white;
@@ -65,7 +61,6 @@
   color: white;
   padding: 15px;
   border: none;
-  border-radius: 40px;
   font-size: 20px;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
