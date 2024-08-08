@@ -84,65 +84,6 @@
   margin: 0;
 }
 
-.cta {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
-}
-
-.cta__box {
-  width: 244px;
-  height: 66px;
-  background: var(--dark-red);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cta__link {
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.cta-quote {
-  text-align: center;
-  margin: 40px 0;
-}
-
-.cta-quote__box {
-  width: 244px;
-  height: 66px;
-  background: var(--dark-red);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cta-quote__link {
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.branding {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 40px 0;
-}
-
-.branding__circle {
-  width: 157px;
-  height: 157px;
-  background: #bf2626;
-  margin-right: 20px;
-}
-
-.branding__icon {
-  width: 90px;
-  height: 90px;
-}
 
 /* General Styles */
 
