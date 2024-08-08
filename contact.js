@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const phoneNumberInput = document.getElementById("phone-number");
   const emailInput = document.getElementById("email");
   const companyInput = document.getElementById("company");
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
