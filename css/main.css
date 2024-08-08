@@ -3,11 +3,12 @@
 
   --dark-red: #680000;
   --body-bg: rgba(72, 72, 72, 0.255);
-  --border:1px solid black;
-  --container-bg:#ffffff;
-  --hamburger-bg:rgb(73, 8, 8);
-  --header-height:88px;
-  --box-shadow:#00000097 0px 0px 5px;
+  --border: 1px solid black;
+  --container-bg: #ffffff;
+  --hamburger-bg: rgb(73, 8, 8);
+  --header-height: 70px;
+  --header-title-font-size: 20px;
+  --box-shadow: #00000097 0px 0px 5px;
 }
 
 @font-face {
@@ -51,7 +52,7 @@ body {
   display: none;
   width: 40px;
   height: 40px;
-  margin-top: 23px;
+  margin-top: calc(var(--header-height) / 5);
 }
 
 .main-container {
@@ -67,7 +68,7 @@ body {
   width: 100%;
   color: white;
   height: 600px;
-  top: 88px;
+  top: var(--header-height);
   z-index: 100;
   align-items: center;
   justify-content: center;
@@ -78,9 +79,9 @@ body {
 .header__title {
   position: absolute;
   left: 40px;
-  top: 34px;
+  top: calc(var(--header-height) / 3);
   color: white;
-  font-size: 25px;
+  font-size: var(--header-title-font-size);
   font-weight: 100;
   padding: 0;
 }
@@ -95,7 +96,7 @@ body {
 
 .nav__item {
   color: white;
-  font-size: 20px;
+  font-size: calc(var(--header-title-font-size) - 5px);
   font-weight: 100;
   margin-left: 20px;
   text-decoration: none;
