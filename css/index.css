@@ -89,26 +89,15 @@
 /* General Styles */
 
 .read-more {
-  font-size: 16px;
+  font-size: 15px;
   background-color: var(--dark-red);
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 15px 20px;
   position: relative;
-  top: 10px;
-}
-
-.main-section__button {
-  background: var(--dark-red);
-  color: white;
-  font-size: 24px;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 20px;
+  top: 14px;
 }
 
 /* Media Queries */
