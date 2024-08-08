@@ -34,6 +34,11 @@
   flex-direction: column;
 }
 
+.index__hero-logo img {
+  width: 204px;
+  height: 150px;
+}
+
 .index__hero-logo p {
   font-size: 20px;
   text-wrap: nowrap;
@@ -162,7 +167,6 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
-
 }
 
 @media (max-width: 480px) {
@@ -215,14 +219,14 @@
   .index__hero-logo {
     --width: 100px;
     --height: 100px;
-    --py:50px;
+    --py: 50px;
     padding: 10px var(--py);
     border-radius: 5px;
     position: absolute;
     width: var(--width);
     height: var(--height);
     background-color: var(--dark-red);
-    top: calc(var(--hero-image-height) - calc((var(--height) + var(--py)) / 2) );
+    top: calc(var(--hero-image-height) - calc((var(--height) + var(--py)) / 2));
     display: flex;
     align-items: center;
     justify-content: center;
