@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  --hero-image-height: 870px;
+  --hero-image-height: 600px;
 }
 
 .index__hero-image {
