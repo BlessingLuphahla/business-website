@@ -5,14 +5,14 @@
   width: 85%;
   align-self: center;
   justify-self: center;
-  border: 1px solid black;
-  background-color: white;
+  border: var(--border);
+  background-color: var(--container-bg);
 }
 
 .main-content__intro {
   width: 1985px;
   height: 279px;
-  background: #400101;
+  background: var(--dark-red);
   margin-bottom: 20px;
 }
 
@@ -30,15 +30,15 @@
 .main-content__details {
   width: 1981px;
   height: 1562px;
-  background: white;
-  border: 1px solid black;
+  background: var(--container-bg);
+  border: var(--border);
   padding: 20px;
 }
 
 .details__content {
   width: 1836px;
   height: 1487px;
-  color: #400101;
+  color: var(--dark-red);
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;

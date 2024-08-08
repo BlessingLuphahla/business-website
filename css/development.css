@@ -15,7 +15,6 @@
   .main-section__title {
     align-self: center;
     font-size: 30px;
-    color: black;
   }
 
   .main-section__content {
@@ -27,8 +26,7 @@
     max-width: 800px;
     text-align: left;
     font-size: 18px;
-    color: #400101;
-    border: #400101 1px solid;
+    border: var(--border);
   }
 
   /* Media Queries */

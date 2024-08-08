@@ -1,6 +1,6 @@
 /* Main Section */
 .main-section {
-  background-color: white;
+  background-color: var(--container-bg);
   padding: 20px;
   width: 95%;
   max-width: 99%;
@@ -40,7 +40,7 @@
 .contact-form__input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: var(--border);
   border-radius: 4px;
   font-size: 16px;
   color: black;
@@ -50,12 +50,12 @@
 }
 
 .contact-form__input:focus {
-  border-color: #680000;
+  border-color: var(--dark-red);
   outline: none;
 }
 
 .contact-form__button {
-  background-color: #680000;
+  background-color: var(--dark-red);
   align-self: center;
   color: white;
   padding: 15px;
@@ -69,11 +69,11 @@
 }
 
 .contact-form__button:hover {
-  background-color: dark#680000;
+  background-color: darkvar(--dark-red);
 }
 
 .contact-form__error {
-  color: #680000;
+  color: var(--dark-red);
 }
 
 /* Media Queries */

@@ -12,8 +12,8 @@
 }
 
 .contact-form {
-  background: rgba(255, 255, 255, 0.224);
-  border: 1px solid black;
+  background: var(--container-bg);
+  border: var(--border);
   margin: 20px auto;
   padding: 10px;
   max-width: 90%;
@@ -30,22 +30,22 @@
 .contact-form__label {
   display: block;
   font-size: 24px;
-  color: #680000;
+  color: var(--dark-red);
   margin-bottom: 5px;
 }
 
 .contact-form__input {
   width: 90%;
   height: 55px;
-  border: 1px solid #261515;
+  border: var(--border);
   padding: 0 10px;
   font-size: 20px;
-  color: #680000;
+  color: var(--dark-red);
   border-radius: 50px;
 }
 
 .contact-form__button {
-  background: #680000;
+  background: var(--dark-red);
   color: white;
   font-size: 24px;
   padding: 10px 20px;
