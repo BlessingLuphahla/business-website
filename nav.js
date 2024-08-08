@@ -3,6 +3,7 @@ var isOpen = false;
 const open = document.querySelector("img.open-menu");
 const menu = document.querySelector("div.hamburger-menu");
 
+
 open.addEventListener("click", function () {
   console.log('clicked')
   if (!isOpen) {

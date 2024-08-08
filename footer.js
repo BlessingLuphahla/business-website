@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Content of the preview
     previewContainer.innerHTML = `
             <div class="preview-content">
-                <span class="close-btn">&times;</span>
+                <img src="images/close.svg" class="close-btn">
                 <h2>${title}</h2>
                 <p>${message}</p>
                 <a href="${link}">${buttonText}</a>
@@ -33,23 +33,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Event listener to show the preview
   gmail.addEventListener("click", function () {
-    previewContainer.style.display = "block";
+    previewContainer.style.display = "flex";
     previewContainerEdit(title="email", message="Connect with us via email", buttonText="Send An email", link = emailHref)
     
 });
 linkedin.addEventListener("click", function () {
-    previewContainer.style.display = "block";
+    previewContainer.style.display = "flex";
     previewContainerEdit(title="linkedin", message="Connect with us on linkedin", buttonText="visit linkedIn Profile", link = linkedinHref)
     
     
 });
 call.addEventListener("click", function () {
-    previewContainer.style.display = "block";
+    previewContainer.style.display = "flex";
     previewContainerEdit(title="Call", message="Reach us by phone", buttonText="call now", link = phoneHref)
     
 });
 facebook.addEventListener("click", function () {
-    previewContainer.style.display = "block";
+    previewContainer.style.display = "flex";
     previewContainerEdit(title="Facebook", message="Follow us on facebook", buttonText="Visit Facebook Page", link = facebookHref)
     
   });
