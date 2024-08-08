@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  --hero-image-height: 850px;
+  --hero-image-height: 870px;
 }
 
 .index__hero-image {
@@ -42,7 +42,7 @@
 .services {
   display: flex;
   flex-wrap: wrap;
-  margin: 200px 0;
+  margin: 100px 0;
   align-self: center;
 }
 
