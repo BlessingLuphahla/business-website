@@ -1,7 +1,7 @@
 /* Main Section */
 .main-section {
   background: linear-gradient(500deg, #510202, #7f0303, #510202);
-  --margin:50px;
+  --margin: 50px;
   padding: 50px;
   width: 65%;
   max-width: 99%;
