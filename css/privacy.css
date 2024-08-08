@@ -1,19 +1,21 @@
 .main {
-  background:  var(--container-bg);
+  background: var(--container-bg);
   border: var(--border);
   margin: 10px;
+  position: relative;
+  top: var(--header-height);
   width: 95%;
   align-self: center;
+  margin-bottom: var(--header-height);
 }
 
 .privacy-policy {
   background: white;
-  border: var(--border);
-  padding: 10px;
+  padding: 15px;
 }
 
 .privacy-policy__title {
-  color: white;
+  color: black;
   font-size: 25px;
   font-weight: 400;
   line-height: 22.5px;
@@ -33,4 +35,10 @@
 .privacy-policy__link {
   color: var(--dark-red);
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
 }
