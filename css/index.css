@@ -38,14 +38,13 @@
 
 .services__item {
   width: 500px;
-  height: 600px;
+  height: 620px;
   background: var(--container-bg);
   border: var(--border);
   box-shadow: var(--box-shadow);
   margin: 20px;
   position: relative;
 }
-
 
 .services__item img {
   width: 100%;
@@ -132,11 +131,14 @@
 /* General Styles */
 
 .read-more {
-  font-size: 17px;
+  font-size: 16px;
+  background-color: var(--dark-red);
   text-decoration: none;
   text-transform: lowercase;
-  color: var(--dark-red);
+  color: white;
   font-weight: 700;
+  border-radius: 50px;
+  padding: 10px 20px;
 }
 
 .main-section__button {
@@ -164,7 +166,7 @@
     height: 320px;
   }
   .services__item:hover {
-    background:  var(--container-bg);
+    background: var(--container-bg);
   }
 
   .index__hero-logo {
