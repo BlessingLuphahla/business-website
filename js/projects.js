@@ -37,10 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!phoneNumberInput.value.trim()) {
       showError(phoneNumberInput, "Phone Number is required.");
       valid = false;
-    } else if (phoneNumberInput.value < 10) {
+    } else if (phoneNumberInput.value < 5) {
       showError(
         phoneNumberInput,
-        "Phone Number must have at least 10 characters ,please put country code"
+        "Phone Number must have at least 5 characters ,please put country code"
       );
       valid = false;
     } else {
