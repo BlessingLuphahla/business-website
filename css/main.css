@@ -10,6 +10,7 @@
   --header-title-font-size: 20px;
   --box-shadow: #00000097 0px 0px 5px;
   --border-radius: 1px;
+  --red-gradient: linear-gradient(500deg, #510202, #7f0303, #510202);
 }
 
 /* fonts */
@@ -168,7 +169,6 @@ body {
 .footer__contact-item {
   font-size: 24px;
 }
-
 
 .footer__policies-title {
   font-size: 24px;

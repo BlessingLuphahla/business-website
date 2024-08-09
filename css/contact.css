@@ -1,6 +1,6 @@
 /* Main Section */
 .main-section {
-  background: linear-gradient(500deg, #510202, #7f0303, #510202);
+  background: var(--red-gradient);
   --margin: 50px;
   padding: 20px;
   width: 70%;

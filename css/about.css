@@ -56,7 +56,7 @@
 .contact-icon {
   width: 157px;
   height: 157px;
-  background-color: var(--dark-red);
+  background: var(--red-gradient);
   position: absolute;
   top: 1946px;
   left: 2267px;

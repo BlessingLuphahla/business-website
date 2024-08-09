@@ -52,14 +52,9 @@
   margin: 0;
 }
 
-.services__item .svg {
-  box-shadow: var(--box-shadow);
-  background-color: var(--dark-red);
-}
-
 .get-a-quote {
   font-size: 18px;
-  background-color: var(--dark-red);
+  background: var(--red-gradient);
   text-decoration: none;
   text-transform: lowercase;
   color: white;

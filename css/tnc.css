@@ -17,7 +17,7 @@
 
 .main-content {
   --font-size: 15px;
-  background: linear-gradient(500deg, #510202, #7f0303, #510202);
+  background: var(--red-gradient);
   padding: 35px;
   text-align: center;
   font-size: var(--font-size);
@@ -27,7 +27,7 @@
 .main-content__intro {
   width: 1985px;
   height: 279px;
-  background: var(--dark-red);
+  background: var(--red-gradient);
   margin-bottom: 20px;
 }
 
