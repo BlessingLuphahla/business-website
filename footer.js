@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const linkedin = document.querySelector(".linkedin");
   const call = document.querySelector(".call");
   const facebook = document.querySelector(".facebook");
+  const footerLogo = document.querySelector(".footer img");
 
   const previewContainer = document.createElement("div");
   previewContainer.classList.add("social-preview");
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function previewContainerEdit(title, message, buttonText, link = "#") {
     // Content of the preview
     previewContainer.innerHTML = `
-            <div class="preview-content">
+            <div class="preview-content scale-up-center">
                 <img src="images/close.svg" class="close-btn">
                 <h2>${title}</h2>
                 <p>${message}</p>
@@ -29,28 +30,49 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  footerLogo.addEventListener("click", function () {
+    if (!window.location.href.includes("index.html")) {
+      window.location.href = "index.html";
+    }
+  });
+
   document.body.appendChild(previewContainer);
 
   // Event listener to show the preview
   gmail.addEventListener("click", function () {
     previewContainer.style.display = "flex";
-    previewContainerEdit(title="email", message="Connect with us via email", buttonText="Send An email", link = emailHref)
-    
-});
-linkedin.addEventListener("click", function () {
+    previewContainerEdit(
+      (title = "email"),
+      (message = "Connect with us via email"),
+      (buttonText = "Send An email"),
+      (link = emailHref)
+    );
+  });
+  linkedin.addEventListener("click", function () {
     previewContainer.style.display = "flex";
-    previewContainerEdit(title="linkedin", message="Connect with us on linkedin", buttonText="visit linkedIn Profile", link = linkedinHref)
-    
-    
-});
-call.addEventListener("click", function () {
+    previewContainerEdit(
+      (title = "linkedin"),
+      (message = "Connect with us on linkedin"),
+      (buttonText = "visit linkedIn Profile"),
+      (link = linkedinHref)
+    );
+  });
+  call.addEventListener("click", function () {
     previewContainer.style.display = "flex";
-    previewContainerEdit(title="Call", message="Reach us by phone", buttonText="call now", link = phoneHref)
-    
-});
-facebook.addEventListener("click", function () {
+    previewContainerEdit(
+      (title = "Call"),
+      (message = "Reach us by phone"),
+      (buttonText = "call now"),
+      (link = phoneHref)
+    );
+  });
+  facebook.addEventListener("click", function () {
     previewContainer.style.display = "flex";
-    previewContainerEdit(title="Facebook", message="Follow us on facebook", buttonText="Visit Facebook Page", link = facebookHref)
-    
+    previewContainerEdit(
+      (title = "Facebook"),
+      (message = "Follow us on facebook"),
+      (buttonText = "Visit Facebook Page"),
+      (link = facebookHref)
+    );
   });
 });
