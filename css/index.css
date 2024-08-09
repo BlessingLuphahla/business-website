@@ -89,7 +89,7 @@
 
 .read-more {
   font-size: 15px;
-  background: var(--red-gradient);
+  background: var(--dark-red);
   text-decoration: none;
   text-transform: uppercase;
   color: white;
