@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const companyInput = document.getElementById("company");
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
+  var checkboxQueries = "";
+
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -36,7 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
       showError(phoneNumberInput, "Phone Number is required.");
       valid = false;
     } else if (!/^\d{14}$/.test(phoneNumberInput.value)) {
-      showError(phoneNumberInput, "Phone Number must have at least 11 characters ,please put country code");
+      showError(
+        phoneNumberInput,
+        "Phone Number must have at least 11 characters ,please put country code"
+      );
       valid = false;
     } else {
       clearError(phoneNumberInput);
@@ -73,14 +78,27 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function sendEmail() {
+    // setting up checkboxes
+
+    checkboxes.forEach((checkbox) => {
+      if (checkbox.checked) {
+        checkboxQueries += " " + checkbox.nextElementSibling.textContent;
+      }
+    });
+
+    // setting up the rest
     const firstName = firstNameInput.value.trim();
     const lastName = lastNameInput.value.trim();
     const phoneNumber = phoneNumberInput.value.trim();
     const email = emailInput.value.trim();
     const company = companyInput.value.trim();
 
-    const subject = "New Contact Form Submission";
-    const body = `First Name: ${firstName}\nLast Name: ${lastName}\nPhone Number: ${phoneNumber}\nEmail: ${email}\nCompany: ${company}`;
+    const subject = `message from ${firstName} ${lastName}`;
+    const body = `
+    Can you Give me Assistance for My company(${company}) \n
+    I need help with ${checkboxQueries}
+    Here are my details:
+    \nPhone Number: ${phoneNumber}\nEmail: ${email}\n`;
 
     window.location.href = `mailto:luphahlablessingthamsanqa@gmail.com?subject=${encodeURIComponent(
       subject

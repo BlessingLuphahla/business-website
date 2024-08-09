@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const phoneNumberInput = document.getElementById("phone-number");
   const emailInput = document.getElementById("email");
   const companyInput = document.getElementById("company");
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+  var checkboxQueries = "";
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -34,8 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!phoneNumberInput.value.trim()) {
       showError(phoneNumberInput, "Phone Number is required.");
       valid = false;
-    } else if (!/^\d{10}$/.test(phoneNumberInput.value)) {
-      showError(phoneNumberInput, "Phone Number must be 10 digits.");
+    } else if (!/^\d{14}$/.test(phoneNumberInput.value)) {
+      showError(
+        phoneNumberInput,
+        "Phone Number must have at least 11 characters ,please put country code"
+      );
       valid = false;
     } else {
       clearError(phoneNumberInput);
@@ -72,14 +78,27 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function sendEmail() {
+    // setting up checkboxes
+
+    checkboxes.forEach((checkbox) => {
+      if (checkbox.checked) {
+        checkboxQueries += " " + checkbox.nextElementSibling.textContent;
+      }
+    });
+
+    // setting up the rest
     const firstName = firstNameInput.value.trim();
     const lastName = lastNameInput.value.trim();
     const phoneNumber = phoneNumberInput.value.trim();
     const email = emailInput.value.trim();
     const company = companyInput.value.trim();
 
-    const subject = "Request For Portfolio";
-    const body = `First Name: ${firstName}\nLast Name: ${lastName}\nPhone Number: ${phoneNumber}\nEmail: ${email}\nCompany: ${company}`;
+    const subject = `message from ${firstName} ${lastName}`;
+    const body = `
+    Can you Give me Portfolio \n
+    I need help with ${checkboxQueries}
+    Here are my details:
+    \nPhone Number: ${phoneNumber}\nEmail: ${email}\ncompany: ${company}`;
 
     window.location.href = `mailto:luphahlablessingthamsanqa@gmail.com?subject=${encodeURIComponent(
       subject
