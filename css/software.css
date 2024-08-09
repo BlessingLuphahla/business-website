@@ -31,6 +31,7 @@
 .main-content__details img {
   width:100%;
   height: auto;
+  padding: 10px;
 }
 
 .details__text {
