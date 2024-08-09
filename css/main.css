@@ -247,46 +247,49 @@ body {
 .social-preview {
   display: none;
   position: fixed;
-  bottom: 30px;
-  right: 50px;
-  width: 300px;
+  bottom: 150px;
+  right: 10px;
+  width: 400px;
   background-color: white;
-  border: 2px solid black;
-  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.489);
+  border-radius: 5px;
   box-shadow: var(--box-shadow);
   z-index: 1005;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-  background-color: rgb(208, 207, 207);
+  background-color: rgb(255, 253, 253);
 }
 
 .preview-content {
-  padding: 15px;
+  padding: 100px;
   text-align: center;
   color: var(--dark-red);
 }
 
 .preview-content h2 {
   color: var(--dark-red);
-  margin-bottom: 10px;
-  font-size: 25px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 40px;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 .preview-content p {
+  text-wrap: nowrap;
+  font-size: 18px;
   margin-bottom: 15px;
+  margin-top: 15px;
   color: var(--dark-red);
 }
 
 .preview-content a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 20px 25px;
   background-color: var(--dark-red);
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  margin-top: 15px;
 }
 
 .preview-content a:hover {
@@ -334,46 +337,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  :root {
-    --body-bg: white;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .footer__section--contact {
-    margin-left: 18vw;
-  }
-
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .header__title {
-    font-size: 19px;
-  }
-
-  .header__title {
-    position: relative;
-    left: -40px;
-  }
-
-  .open-menu {
-    display: flex;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .nav__item {
-    font-size: 30px;
-    font-weight: 500;
-  }
 }
 
 @media (max-width: 480px) {
@@ -415,5 +378,39 @@ body {
   .nav__item {
     font-size: 30px;
     font-weight: 500;
+  }
+
+  .social-preview {
+    --prev-width: 300px;
+    width: var(--prev-width);
+    bottom: 100px;
+    right: calc(50vw - calc(var(--prev-width) / 2));
+  }
+
+  .preview-content {
+    padding: 60px;
+  }
+
+  .preview-content h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 40px;
+  }
+
+  .preview-content p {
+    text-wrap: wrap;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .preview-content a {
+    padding: 20px 25px;
+    margin-top: 15px;
+  }
+
+  .close-btn {
+    top: 15px;
+    right: 25px;
   }
 }
