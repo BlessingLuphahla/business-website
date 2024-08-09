@@ -66,6 +66,22 @@
 }
 
 /* Media Queries */
+@media (max-width: 1385px) {
+  .services {
+    flex-wrap: nowrap;
+  }
+  .services__item {
+    width: 390px;
+  }
+}
+
+@media (max-width: 985px) {
+  .services {
+    flex-wrap: wrap;
+  }
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
   .services {
     margin-top: 0;

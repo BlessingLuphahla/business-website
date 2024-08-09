@@ -100,7 +100,19 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 1385px) {
+  .services {
+    flex-wrap: nowrap;
+  }
+  .services__item {
+    width: 390px;
+  }
+}
+
+@media (max-width: 985px) {
+  .services {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 480px) {
