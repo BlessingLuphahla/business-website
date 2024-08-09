@@ -101,84 +101,6 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .index__hero {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    --hero-image-height: 310px;
-  }
-
-  .services {
-    margin: 0;
-    padding: 0;
-    align-self: center;
-    display: flex;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .services:first-child {
-    margin-top: 55px;
-  }
-
-  .index__hero-image {
-    height: var(--hero-image-height);
-  }
-
-  .services__item:hover {
-    background: white;
-  }
-
-  .services__item {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    width: 100%;
-    height: auto;
-  }
-  .services__item img {
-    width: 100%;
-    height: 300px;
-    align-self: center;
-  }
-
-  .services__item-description {
-    text-align: center;
-    text-wrap: wrap;
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-
-  .index__hero-logo {
-    --width: 100px;
-    --height: 100px;
-    --py: 20px;
-    --px: 10px;
-    padding: var(--px) var(--py);
-    border-radius: 5px;
-    position: absolute;
-    width: var(--width);
-    height: var(--height);
-    background-color: var(--dark-red);
-    top: calc(
-      var(--hero-image-height) - calc((var(--height) + var(--py)) / 2) -
-        var(--py) / 2
-    );
-    left: calc(50vw - calc(var(--width) - calc(var(--px) * 2.2)));
-  }
-  .index__hero-logo img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .index__hero-logo p {
-    font-size: 10px;
-    text-align: center;
-    font-family: Roboto-Bold;
-  }
-  .services__item--software {
-    margin-bottom: calc(var(--header-height) + 20px);
-  }
 }
 
 @media (max-width: 480px) {
@@ -217,6 +139,8 @@
     justify-self: center;
     width: 100%;
     height: auto;
+    margin: 8px;
+
   }
   .services__item img {
     width: 100%;
@@ -233,7 +157,7 @@
   .index__hero-logo {
     --width: 100px;
     --height: 100px;
-    --py: 20px;
+    --py: 40px;
     --px: 10px;
     padding: var(--px) var(--py);
     border-radius: 5px;
@@ -241,11 +165,8 @@
     width: var(--width);
     height: var(--height);
     background-color: var(--dark-red);
-    top: calc(
-      var(--hero-image-height) - calc((var(--height) + var(--py)) / 2) -
-        var(--py) / 2
-    );
-    left: calc(50vw - calc(var(--width) - calc(var(--px) * 2.2)));
+    top: calc(var(--hero-image-height) - calc((var(--height) + var(--py)) / 2));
+    left: calc(50vw - calc(var(--width) - var(--px)));
   }
 
   .index__hero-logo img {
@@ -254,10 +175,23 @@
   }
 
   .index__hero-logo p {
-    font-size: 10px;
+    font-size: 14px;
     text-align: center;
     font-family: Roboto-Bold;
   }
+
+  .services__item--development {
+    --margin-dev: calc(var(--header-height) - 10px);
+    margin-top: var(--margin-dev);
+    margin-bottom: var(--margin-dev);
+  }
+
+  .services__item--marketing {
+    --margin-dev: calc(var(--header-height) - 10px);
+    margin-top: var(--margin-dev);
+    margin-bottom: var(--margin-dev);
+  }
+
   .services__item--software {
     margin-bottom: calc(var(--header-height) + 20px);
   }
