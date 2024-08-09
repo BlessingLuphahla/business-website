@@ -12,8 +12,8 @@
   top: var(--header-height);
   display: flex;
   flex-direction: column;
-  margin-bottom: calc(var(--header-height) + 50px);
-  padding-bottom: calc(var(--header-height) + 50px);
+  margin-bottom: calc(var(--header-height) + 100px);
+  padding-bottom: calc(var(--header-height) + 20px);
 }
 
 .main-content__title {
@@ -38,6 +38,20 @@
   font-size: 17px;
   line-height: 1.55;
   text-wrap: wrap;
+}
+
+.get-a-quote {
+  font-size: 18px;
+  background: var(--dark-red);
+  text-decoration: none;
+  text-transform: lowercase;
+  color: white;
+  font-weight: 200;
+  padding: 18px 15px;
+  position: relative;
+  top: 15px;
+  cursor: pointer;
+  align-self: center;
 }
 
 /* Media Queries */
