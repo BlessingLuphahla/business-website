@@ -11,7 +11,7 @@
   border: var(--border);
   align-self: center;
   margin-bottom: calc(var(--header-height) + var(--margin) + 120px);
-  border-radius: 15px;
+  border-radius: var(--border-radius);
 }
 
 .main-section__title {
@@ -49,7 +49,7 @@
   height: 45px;
   padding: 10px;
   border: var(--border);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   font-size: 19px;
   color: black;
   background-color: white;
@@ -76,7 +76,7 @@
   padding: 12px;
   border: none;
   font-size: 25px;
-  border-radius: 5px;
+  var(--border-radius);
   cursor: pointer;
   width: 200px;
   margin-bottom: 10px;

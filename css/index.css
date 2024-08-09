@@ -22,7 +22,7 @@
   color: white;
   --py: 10px;
   padding: var(--py) 100px;
-  border-radius: 25px;
+  border-radius: var(--border-radius);
   position: absolute;
   width: var(--width);
   height: var(--height);
@@ -140,7 +140,6 @@
     width: 100%;
     height: auto;
     margin: 8px;
-
   }
   .services__item img {
     width: 100%;
@@ -160,7 +159,7 @@
     --py: 40px;
     --px: 10px;
     padding: var(--px) var(--py);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     position: absolute;
     width: var(--width);
     height: var(--height);

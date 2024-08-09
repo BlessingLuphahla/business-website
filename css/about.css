@@ -1,5 +1,4 @@
-
-.container{
+.container {
   width: 99%;
   max-width: 100%;
   margin: 0 auto;
@@ -9,7 +8,6 @@
   display: flex;
   flex-direction: column;
 }
-
 
 .content {
   align-self: center;
@@ -72,12 +70,10 @@
   transform: translate(-50%, -50%);
 }
 
-
 /* Media Queries */
 
 /* Extra small devices (phones, less than 600px) */
 @media (max-width: 599px) {
-
   .about-us {
     font-size: 24px;
     top: 280px;

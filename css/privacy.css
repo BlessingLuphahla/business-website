@@ -9,7 +9,7 @@
   width: 70%;
   align-self: center;
   margin-bottom: calc(var(--header-height) + var(--margin));
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   left: 65px;
   color: white;
 }

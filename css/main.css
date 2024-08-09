@@ -9,6 +9,7 @@
   --header-height: 70px;
   --header-title-font-size: 20px;
   --box-shadow: #00000097 0px 0px 5px;
+  --border-radius: 1px;
 }
 
 @font-face {
