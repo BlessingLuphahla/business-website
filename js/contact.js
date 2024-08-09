@@ -37,10 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!phoneNumberInput.value.trim()) {
       showError(phoneNumberInput, "Phone Number is required.");
       valid = false;
-    } else if (!/^\d{14}$/.test(phoneNumberInput.value)) {
+    } else if (phoneNumberInput.value < 10) {
       showError(
         phoneNumberInput,
-        "Phone Number must have at least 11 characters ,please put country code"
+        "Phone Number must have at least 10 characters ,please put country code"
       );
       valid = false;
     } else {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     checkboxes.forEach((checkbox) => {
       if (checkbox.checked) {
-        checkboxQueries += " " + checkbox.nextElementSibling.textContent;
+        checkboxQueries += checkbox.nextElementSibling.textContent + " & ";
       }
     });
 
@@ -94,11 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const company = companyInput.value.trim();
 
     const subject = `message from ${firstName} ${lastName}`;
-    const body = `
-    Can you Give me Assistance for My company(${company}) \n
-    I need help with ${checkboxQueries}
-    Here are my details:
-    \nPhone Number: ${phoneNumber}\nEmail: ${email}\n`;
+    const body = `Can you Give me Assistance for My company(${company})\nI need help with ${checkboxQueries}\n\nHere are my details:\nPhone Number: ${phoneNumber}\nEmail: ${email}\n`;
 
     window.location.href = `mailto:luphahlablessingthamsanqa@gmail.com?subject=${encodeURIComponent(
       subject
