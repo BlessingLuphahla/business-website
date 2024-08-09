@@ -58,15 +58,15 @@
 }
 
 .get-a-quote {
-  font-size: 16px;
+  font-size: 18px;
   background-color: var(--dark-red);
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: white;
   font-weight: 200;
-  padding: 10px 20px;
+  padding: 18px 15px;
   position: relative;
-  top: 10px;
+  top: 25px;
 }
 
 
