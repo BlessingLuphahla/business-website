@@ -26,6 +26,7 @@
   padding: 10px;
   position: relative;
   align-self: center;
+  padding-bottom: 10px;
 }
 
 .services__item img {
