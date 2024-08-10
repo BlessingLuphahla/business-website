@@ -14,23 +14,41 @@ document.addEventListener("DOMContentLoaded", function () {
   const previewContainer = document.createElement("div");
   previewContainer.classList.add("social-preview");
 
+  function setTime() {}
+
   function previewContainerEdit(title, message, buttonText, link = "#") {
     // Content of the preview
     previewContainer.innerHTML = `
-     <div class="social-preview-header">
-        <div class="online-status"></div>
-        <span class="time">2:30 PM</span>
-        <img src="images/close.svg" class="close-btn">
+    <div class="social-preview-header">
+    <div class="online-status"></div>
+    <span class="time">2:30 PM</span>
+    <img src="images/close.svg" class="close-btn">
     </div>
     <div class="profile-pic">
-        <!-- You can put an img tag here for the profile picture -->
+    <!-- You can put an img tag here for the profile picture -->
     </div>
     <div class="message-preview">
-      <h2>${title}</h2>
-        <p>${message}</p>
-         <a href="${link}">${buttonText}</a>
+    <h2>${title}</h2>
+    <p>${message}</p>
+    <a href="${link}">${buttonText}</a>
     </div>
-        `;
+    `;
+    // setting up time
+    const timeDiv = document.querySelector(".social-preview-header span");
+    const tempTime = new Date();
+    const hour =
+      tempTime.getHours().toString().length != 2
+        ? "0" + tempTime.getHours().toString()
+        : tempTime.getHours().toString();
+    const min =
+      tempTime.getMinutes().toString().length != 2
+        ? "0" + tempTime.getMinutes().toString()
+        : tempTime.getMinutes().toString();
+    const meridian = Number(hour.trim()) < 12 ? "AM" : "PM";
+    const time = `${hour}:${min} ${meridian}`;
+
+    timeDiv.textContent = time;
+
     // Event listener to close the preview
     document.querySelector(".close-btn").addEventListener("click", function () {
       previewContainer.style.display = "none";

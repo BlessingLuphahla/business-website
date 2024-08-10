@@ -241,8 +241,9 @@ border-radius: 50%;
 }
 
 .time {
-  color: #888888; /* Grey color for time */
-  font-size: 14px;
+  color: #000000; /* Grey color for time */
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .profile-pic {
