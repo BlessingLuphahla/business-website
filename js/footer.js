@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     <img src="images/close.svg" class="close-btn">
     </div>
     <div class="profile-pic">
-    <!-- You can put an img tag here for the profile picture -->
     </div>
     <div class="message-preview">
     <h2>${title}</h2>
