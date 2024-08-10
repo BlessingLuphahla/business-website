@@ -62,8 +62,6 @@
   left: 2267px;
 }
 
-
-
 /* Media Queries */
 
 /* Extra small devices (phones, less than 600px) */
@@ -89,6 +87,9 @@
     width: 50px;
     height: 50px;
   }
+  .whatsapp {
+    display: none;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
@@ -112,6 +113,9 @@
   .contact-icon img {
     width: 60px;
     height: 60px;
+  }
+  .whatsapp {
+    display: none;
   }
 }
 
@@ -138,6 +142,9 @@
     width: 70px;
     height: 70px;
   }
+  .whatsapp {
+    display: none;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -162,5 +169,8 @@
   .contact-icon img {
     width: 80px;
     height: 80px;
+  }
+  .whatsapp {
+    display: none;
   }
 }
