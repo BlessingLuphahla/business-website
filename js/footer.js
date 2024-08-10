@@ -17,12 +17,19 @@ document.addEventListener("DOMContentLoaded", function () {
   function previewContainerEdit(title, message, buttonText, link = "#") {
     // Content of the preview
     previewContainer.innerHTML = `
-            <div class="preview-content scale-up-center">
-                <img src="images/close.svg" class="close-btn">
-                <h2>${title}</h2>
-                <p>${message}</p>
-                <a href="${link}">${buttonText}</a>
-            </div>
+     <div class="social-preview-header">
+        <div class="online-status"></div>
+        <span class="time">2:30 PM</span>
+        <img src="images/close.svg" class="close-btn">
+    </div>
+    <div class="profile-pic">
+        <!-- You can put an img tag here for the profile picture -->
+    </div>
+    <div class="message-preview">
+      <h2>${title}</h2>
+        <p>${message}</p>
+         <a href="${link}">${buttonText}</a>
+    </div>
         `;
     // Event listener to close the preview
     document.querySelector(".close-btn").addEventListener("click", function () {
