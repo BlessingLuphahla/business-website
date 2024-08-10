@@ -206,16 +206,15 @@ body {
   display: none;
   width: 400px;
   padding: 15px;
-  background-color: #ffffff; /* White background */
-  border: 2px solid black; /* Green border */
+  background-color: rgb(24, 24, 32); /* White background */
+  border: var(--border); /* Green border */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-  color: #333333;
+  box-shadow: var(--box-shadow);
   position: fixed;
   bottom: 100px;
   right: 100px;
   flex-direction: column;
+  color: white;
 }
 
 .social-preview-header {
@@ -223,17 +222,19 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  color: white;
 }
 
 .online-status {
-width: 15px;
-height: 15px;
-background-color: #00ff00; /* Green for online status */
-border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #00ff00; /* Green for online status */
+  border-radius: 50%;
 }
 
 .online-status::after {
-  content: 'online';
+  content: "online";
+  color: white;
   margin: 5px;
   position: relative;
   left: 15px;
@@ -241,15 +242,15 @@ border-radius: 50%;
 }
 
 .time {
-  color: #000000; /* Grey color for time */
+  color: white; /* Grey color for time */
   font-size: 16px;
   font-weight: 900;
 }
 
 .profile-pic {
-  width: 90px;
-  height: 90px;
-  background:url('../images/sm-preview.jpg'); /* Red placeholder for profile picture */
+  width: 100px;
+  height: 100px;
+  background: url("../images/sm-preview.jpg"); /* Red placeholder for profile picture */
   border-radius: 50%;
   background-size: cover;
   margin: 0 auto 10px;
@@ -258,7 +259,7 @@ border-radius: 50%;
 .message-preview {
   text-align: center;
   font-size: 16px;
-  color: #333333; /* Dark text */
+  color: white; /* Dark text */
 }
 
 .message-preview a {
@@ -268,7 +269,12 @@ border-radius: 50%;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 15px;}
+  margin-top: 15px;
+}
+
+.close-btn {
+  color: white;
+}
 
 @media (max-width: 768px) {
   :root {
@@ -315,6 +321,13 @@ border-radius: 50%;
     top: 15px;
     right: 25px;
   }
+
+  .social-preview {
+    width: 330px;
+    padding: 15px;
+    bottom: 100px;
+    right: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -356,6 +369,12 @@ border-radius: 50%;
   .nav__item {
     font-size: 30px;
     font-weight: 500;
+  }
+  .social-preview {
+    width: 330px;
+    padding: 15px;
+    bottom: 100px;
+    right: 10px;
   }
 }
 
