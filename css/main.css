@@ -276,6 +276,25 @@ body {
   color: white;
 }
 
+.whatsapp {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--red-gradient);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-logo {
+  height: 80%;
+  width: 80%;
+  background: url("../images/whatsapp.svg");
+}
+
 @media (max-width: 768px) {
   :root {
     --body-bg: white;
@@ -328,6 +347,13 @@ body {
     bottom: 100px;
     right: 10px;
   }
+
+  .whatsapp {
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -375,6 +401,13 @@ body {
     padding: 15px;
     bottom: 100px;
     right: 10px;
+  }
+
+  .whatsapp {
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
   }
 }
 

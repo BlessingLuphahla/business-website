@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const linkedinHref = "";
   const facebookHref = "";
   const phoneHref = "tel:+263788793302";
+  const whatsappHref =
+    "https://wa.me/263788793302?text=Hey Dynamic Digital Design ";
 
   const gmail = document.querySelector(".gmail");
   const linkedin = document.querySelector(".linkedin");
@@ -14,7 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const previewContainer = document.createElement("div");
   previewContainer.classList.add("social-preview");
 
-  function setTime() {}
+  const whatsapp = document.createElement("div");
+  const whatsappLogo = document.createElement("div");
+
+  whatsappLogo.classList.add("whatsapp-logo");
+  whatsapp.classList.add("whatsapp");
+  whatsapp.appendChild(whatsappLogo);
+  document.body.appendChild(whatsapp);
 
   function previewContainerEdit(title, message, buttonText, link = "#") {
     // Content of the preview
@@ -64,6 +72,16 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.appendChild(previewContainer);
 
   // Event listener to show the preview
+  whatsapp.addEventListener("click", function () {
+    previewContainer.style.display = "flex";
+    previewContainerEdit(
+      (title = "whatsapp"),
+      (message = "Connect with us via whatsapp"),
+      (buttonText = "Send A message"),
+      (link = whatsappHref)
+    );
+  });
+
   gmail.addEventListener("click", function () {
     previewContainer.style.display = "flex";
     previewContainerEdit(
@@ -73,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
       (link = emailHref)
     );
   });
+
   linkedin.addEventListener("click", function () {
     previewContainer.style.display = "flex";
     previewContainerEdit(
@@ -82,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
       (link = linkedinHref)
     );
   });
+
   call.addEventListener("click", function () {
     previewContainer.style.display = "flex";
     previewContainerEdit(
@@ -91,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
       (link = phoneHref)
     );
   });
+
   facebook.addEventListener("click", function () {
     previewContainer.style.display = "flex";
     previewContainerEdit(
