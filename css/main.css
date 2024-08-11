@@ -73,19 +73,18 @@ body {
   position: absolute;
   width: 100%;
   color: white;
-  height: 85vh;
+  height: 95vh;
   top: calc(var(--header-height) - 1px);
   z-index: 1000;
   align-items: center;
-  justify-content:baseline;
-  padding: 10px;
+  justify-content:center;
   gap: 50px;
   font-size: 35px;
 }
 
 
-.hamburger-menu a:first-child {
-  margin-top: 5vh;
+.hamburger-menu a:last-child {
+  margin-bottom: 15vh;
 }
 
 .header__title {
