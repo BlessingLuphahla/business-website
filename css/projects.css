@@ -73,14 +73,16 @@
   background-color: white;
   align-self: center;
   color: var(--dark-red);
-  padding: 12px;
+  font-weight: 900;
+  padding: 10px;
   border: none;
-  font-size: 25px;
-  var(--border-radius);
+  font-size: 20px;
+  border-radius: var(--border-radius);
   cursor: pointer;
-  width: 200px;
+  width: 120px;
   margin-bottom: 10px;
   grid-column: 1 / -1;
+  border-radius: 5px;
 }
 
 .contact-form__error {
