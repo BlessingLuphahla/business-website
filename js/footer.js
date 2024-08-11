@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   whatsappLogo.classList.add("whatsapp-logo");
   whatsapp.classList.add("whatsapp");
   whatsapp.classList.add("roll-in-blurred-left");
+  whatsapp.classList.add("vibrate-1");
   whatsapp.appendChild(whatsappLogo);
   document.body.appendChild(whatsapp);
 
