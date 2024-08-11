@@ -277,8 +277,9 @@ body {
 }
 
 .whatsapp {
-  width: 80px;
-  height: 80px;
+  --side: 65px;
+  width: var(--side);
+  height: var(--side);
   border-radius: 50%;
   background: var(--red-gradient);
   position: fixed;
@@ -349,8 +350,7 @@ body {
   }
 
   .whatsapp {
-    width: 60px;
-    height: 60px;
+    --side: 55px;
     bottom: 20px;
     right: 20px;
   }
@@ -404,8 +404,7 @@ body {
   }
 
   .whatsapp {
-    width: 60px;
-    height: 60px;
+    --side: 55px;
     bottom: 20px;
     right: 20px;
   }

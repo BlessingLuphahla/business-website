@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.appendChild(whatsapp);
 
   function previewContainerEdit(title, message, buttonText, link = "#") {
+    previewContainer.style.display = "flex";
+
     // Content of the preview
     previewContainer.innerHTML = `
     <div class="social-preview-header">
@@ -70,19 +72,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.body.appendChild(previewContainer);
 
+  var whatsappIsOpen = false;
+
   // Event listener to show the preview
   whatsapp.addEventListener("click", function () {
-    previewContainer.style.display = "flex";
-    previewContainerEdit(
-      (title = "whatsapp"),
-      (message = "Connect with us via whatsapp"),
-      (buttonText = "Send A message"),
-      (link = whatsappHref)
-    );
+    if (!whatsappIsOpen) {
+      previewContainerEdit(
+        (title = "whatsapp"),
+        (message = "Connect with us via whatsapp"),
+        (buttonText = "Send A message"),
+        (link = whatsappHref)
+      );
+      whatsappIsOpen = true;
+    } else {
+      whatsappIsOpen = false;
+      previewContainer.style.display = "none";
+    }
   });
 
   gmail.addEventListener("click", function () {
-    previewContainer.style.display = "flex";
     previewContainerEdit(
       (title = "email"),
       (message = "Connect with us via email"),
@@ -92,7 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   linkedin.addEventListener("click", function () {
-    previewContainer.style.display = "flex";
     previewContainerEdit(
       (title = "linkedin"),
       (message = "Connect with us on linkedin"),
@@ -102,7 +109,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   call.addEventListener("click", function () {
-    previewContainer.style.display = "flex";
     previewContainerEdit(
       (title = "Call"),
       (message = "Reach us by phone"),
@@ -112,7 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   facebook.addEventListener("click", function () {
-    previewContainer.style.display = "flex";
     previewContainerEdit(
       (title = "Facebook"),
       (message = "Follow us on facebook"),
