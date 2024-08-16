@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const emailInput = document.getElementById("email");
   const companyInput = document.getElementById("company");
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const feedbackElement = document.createElement("div");
 
-  var checkboxQueries = "";
+  feedbackElement.classList.add("contact-form__feedback");
+  form.appendChild(feedbackElement);
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -19,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function validateForm() {
     let valid = true;
+    clearAllErrors();
 
     if (!firstNameInput.value.trim()) {
       showError(firstNameInput, "First Name is required.");
@@ -37,10 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!phoneNumberInput.value.trim()) {
       showError(phoneNumberInput, "Phone Number is required.");
       valid = false;
-    } else if (phoneNumberInput.value < 5) {
+    } else if (phoneNumberInput.value.length < 5) {
       showError(
         phoneNumberInput,
-        "Phone Number must have at least 5 characters ,please put country code"
+        "Phone Number must have at least 5 characters, please include the country code."
       );
       valid = false;
     } else {
@@ -61,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showError(input, message) {
-    document.querySelector(".contact-form__error")?.remove();
     const errorElement = document.createElement("div");
     errorElement.classList.add("contact-form__error");
     errorElement.innerText = message;
@@ -77,8 +79,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  function clearAllErrors() {
+    document.querySelectorAll(".contact-form__error").forEach((error) => {
+      error.remove();
+    });
+  }
+
   function sendEmail() {
-    // setting up checkboxes
+    let checkboxQueries = ""; // Reset checkboxQueries each time
 
     checkboxes.forEach((checkbox) => {
       if (checkbox.checked) {
@@ -86,18 +94,29 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // setting up the rest
     const firstName = firstNameInput.value.trim();
     const lastName = lastNameInput.value.trim();
     const phoneNumber = phoneNumberInput.value.trim();
     const email = emailInput.value.trim();
     const company = companyInput.value.trim();
 
-    const subject = `message from ${firstName} ${lastName}`;
-    const body = `Can you Give me Assistance for My company(${company})\nI need help with ${checkboxQueries}\n\nHere are my details:\nPhone Number: ${phoneNumber}\nEmail: ${email}\n`;
+    const subject = `Message from ${firstName} ${lastName}`;
+    const body = `Can you assist with my company (${company})?\n\nI need help with: ${checkboxQueries}\n\nHere are my details:\nPhone Number: ${phoneNumber}\nEmail: ${email}\n`;
 
     window.location.href = `mailto:luphahlablessingthamsanqa@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
+
+    showFeedback("Your message has been sent successfully!", true);
+  }
+
+  function showFeedback(message, isSuccess) {
+    feedbackElement.textContent = message;
+    feedbackElement.style.color = isSuccess ? "green" : "red";
+    feedbackElement.style.display = "block";
+
+    setTimeout(() => {
+      feedbackElement.style.display = "none";
+    }, 5000);
   }
 });
