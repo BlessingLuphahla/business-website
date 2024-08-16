@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (validateForm()) {
       sendEmail();
+    } else {
+      showFeedback("Message Not Sent Please Correct Any Errors", false);
     }
   });
 
@@ -111,9 +113,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showFeedback(message, isSuccess) {
+    feedbackElement.classList.add("feedback");
     feedbackElement.textContent = message;
-    feedbackElement.style.color = isSuccess ? "green" : "red";
-    feedbackElement.style.display = "block";
+    feedbackElement.style.color = isSuccess
+      ? "rgb(0,255,0)"
+      : "rgb(0, 153, 255)";
 
     setTimeout(() => {
       feedbackElement.style.display = "none";
