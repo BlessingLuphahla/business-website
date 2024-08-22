@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       valid = false;
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
       showError(emailInput, "Invalid email format.");
-      valid = false;
+      valid = false;-
     } else {
       clearError(emailInput);
     }
