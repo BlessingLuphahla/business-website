@@ -106,13 +106,21 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://flask-business-email-processor.onrender.com/send-email", true);
+    xhr.open(
+      "POST",
+      "https://flask-business-email-processor.onrender.com/send-email",
+      true
+    );
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
     xhr.onreadystatechange = function () {
       if (xhr.readyState === XMLHttpRequest.DONE) {
         const response = JSON.parse(xhr.responseText);
         showFeedback(response.message, response.success);
+
+        if (response.error) {
+          console.log(response.error);
+        }
       }
     };
 
