@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "/send-email", true);
+    xhr.open("POST", "https://flask-business-email-processor.onrender.com/send-email", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
     xhr.onreadystatechange = function () {
