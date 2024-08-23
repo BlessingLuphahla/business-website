@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function sendEmail() {
-    let checkboxQueries = ""; // Reset checkboxQueries each time
+    let checkboxQueries = "";
 
     checkboxes.forEach((checkbox) => {
       if (checkbox.checked) {
@@ -96,20 +96,35 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    const firstName = firstNameInput.value.trim();
-    const lastName = lastNameInput.value.trim();
-    const phoneNumber = phoneNumberInput.value.trim();
-    const email = emailInput.value.trim();
-    const company = companyInput.value.trim();
+    const data = {
+      firstName: firstNameInput.value.trim(),
+      lastName: lastNameInput.value.trim(),
+      phoneNumber: phoneNumberInput.value.trim(),
+      email: emailInput.value.trim(),
+      company: companyInput.value.trim(),
+      checkboxQueries: checkboxQueries,
+    };
 
-    const subject = `Message from ${firstName} ${lastName}`;
-    const body = `Can you assist with my company (${company})?\n\nI need help with: ${checkboxQueries}\n\nHere are my details:\nPhone Number: ${phoneNumber}\nEmail: ${email}\n`;
+    const xhr = new XMLHttpRequest();
+    xhr.open(
+      "POST",
+      "https://flask-business-email-processor.onrender.com/send-email",
+      true
+    );
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
-    window.location.href = `mailto:luphahlablessingthamsanqa@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        const response = JSON.parse(xhr.responseText);
+        showFeedback(response.message, response.success);
 
-    showFeedback("Your message has been sent successfully!", true);
+        if (response.error) {
+          console.log(response.error);
+        }
+      }
+    };
+
+    xhr.send(JSON.stringify(data));
   }
 
   function showFeedback(message, isSuccess) {
