@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function sendEmail() {
-    let checkboxQueries = "";
+    let checkboxQueries = "(Request a portfolio)\n";
 
     checkboxes.forEach((checkbox) => {
       if (checkbox.checked) {
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
     feedbackElement.classList.add("feedback");
     feedbackElement.textContent = message;
     feedbackElement.style.color = isSuccess
-      ? "rgb(0,255,0)"
+      ? "rgb(21,255,0)"
       : "rgb(0, 153, 255)";
 
     setTimeout(() => {

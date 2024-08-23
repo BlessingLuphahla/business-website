@@ -129,7 +129,8 @@
 }
 
 .feedback {
-  font-size: 25px;
+  font-weight: 900;
+  font-size: 20px;
   display: block;
   text-align: center;
   grid-column: 1 / -1;

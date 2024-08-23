@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function sendEmail() {
-    let checkboxQueries = "";
+    let checkboxQueries = "(Request a portfolio)\n";
 
     checkboxes.forEach((checkbox) => {
       if (checkbox.checked) {
