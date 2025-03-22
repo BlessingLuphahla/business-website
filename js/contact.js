@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function sendEmail() {
-    let checkboxQueries = "(Request a portfolio)\n";
+    let checkboxQueries = "(Contact Us)\n";
 
     checkboxes.forEach((checkbox) => {
       if (checkbox.checked) {
@@ -103,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
       email: emailInput.value.trim(),
       company: companyInput.value.trim(),
       checkboxQueries: checkboxQueries.trim(),
+      subject:"I want to contact you"
     };
 
     const postData = async (data) => {
@@ -145,7 +146,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const handlePostData = async () => {
-
       submitButton.innerHTML = `<div class="loading"></div>`;
       const res = await postData(data);
 
