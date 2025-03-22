@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const facebookHref = "";
   const phoneHref = "tel:+263788793302";
   const whatsappHref =
-    "https://wa.me/263788793302?text=Hey Dynamic Digital Design ";
+    "https://wa.me/27681595429?text=Hey Dynamic Digital Design ";
 
   const gmail = document.querySelector(".gmail");
   const linkedin = document.querySelector(".linkedin");
