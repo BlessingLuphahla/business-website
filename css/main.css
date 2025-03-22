@@ -275,6 +275,7 @@ body {
 
 .close-btn {
   color: white;
+  cursor: pointer;
 }
 
 .whatsapp {
