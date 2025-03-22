@@ -30,6 +30,8 @@
   gap: 25px;
   justify-items: center;
   align-content: center;
+  position: relative;
+  padding: 25px;
 }
 
 .contact-form__input-group {
@@ -83,6 +85,10 @@
   margin-bottom: 10px;
   grid-column: 1 / -1;
   border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-form__error {
@@ -129,11 +135,12 @@
 }
 
 .feedback {
-  font-weight: 900;
-  font-size: 20px;
-  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
-  grid-column: 1 / -1;
+  font-size: 30px;
 }
 
 /* Media Queries */
@@ -144,6 +151,10 @@
     align-self: center;
     margin-top: 0;
     margin-bottom: calc(var(--header-height) + var(--margin) + 40px);
+  }
+
+  .feedback {
+    font-size: 20px;
   }
 
   .contact-form {

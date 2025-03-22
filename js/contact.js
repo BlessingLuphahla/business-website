@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const emailInput = document.getElementById("email");
   const companyInput = document.getElementById("company");
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  const feedbackElement = document.createElement("div");
-
-  feedbackElement.classList.add("contact-form__feedback");
-  form.appendChild(feedbackElement);
+  const submitButton = document.querySelector(
+    "form button[type=submit].contact-form__button"
+  );
+  let data;
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -96,46 +96,72 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    const data = {
+    data = {
       firstName: firstNameInput.value.trim(),
       lastName: lastNameInput.value.trim(),
       phoneNumber: phoneNumberInput.value.trim(),
       email: emailInput.value.trim(),
       company: companyInput.value.trim(),
-      checkboxQueries: checkboxQueries,
+      checkboxQueries: checkboxQueries.trim(),
     };
 
-    const xhr = new XMLHttpRequest();
-    xhr.open(
-      "POST",
-      "https://flask-business-email-processor.onrender.com/send-email",
-      true
-    );
-    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    const postData = async (data) => {
+      const urlLink = "http://localhost:5000/emails";
 
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        const response = JSON.parse(xhr.responseText);
-        showFeedback(response.message, response.success);
+      const jsonData = JSON.stringify(data);
+      try {
+        const res = await fetch(urlLink.toString(), {
+          method: "POST",
+          body: jsonData,
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
 
-        if (response.error) {
-          console.log(response.error);
-        }
+        const returnData = await res.json();
+
+        return returnData;
+      } catch (error) {
+        console.log(error);
       }
     };
 
-    xhr.send(JSON.stringify(data));
-  }
+    function showFeedback(message, isSuccess) {
+      const feedbackElement = document.createElement("div");
 
-  function showFeedback(message, isSuccess) {
-    feedbackElement.classList.add("feedback");
-    feedbackElement.textContent = message;
-    feedbackElement.style.color = isSuccess
-      ? "rgb(21,255,0)"
-      : "rgb(0, 153, 255)";
+      feedbackElement.classList.add("contact-form__feedback");
+      form.appendChild(feedbackElement);
 
-    setTimeout(() => {
-      feedbackElement.style.display = "none";
-    }, 5000);
+      feedbackElement.classList.add("feedback");
+      feedbackElement.textContent = message;
+      feedbackElement.style.color = isSuccess
+        ? "rgb(21,255,0)"
+        : "rgb(0, 153, 255)";
+
+      setTimeout(() => {
+        feedbackElement.style.display = "none";
+        feedbackElement.remove();
+      }, 5000);
+    }
+
+    const handlePostData = async () => {
+
+      submitButton.innerHTML = `<div class="loading"></div>`;
+      const res = await postData(data);
+
+      if (res.success) {
+        showFeedback(res.message, true);
+        firstNameInput.value = "";
+        lastNameInput.value = "";
+        phoneNumberInput.value = "";
+        emailInput.value = "";
+        companyInput.value = "";
+      } else {
+        showFeedback(res.message, false);
+      }
+      submitButton.textContent = "Send";
+    };
+
+    handlePostData();
   }
 });
