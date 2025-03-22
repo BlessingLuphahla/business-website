@@ -68,7 +68,7 @@ body {
 
 .hamburger-menu {
   display: none;
-  background:var(--red-gradient);
+  background: var(--red-gradient);
   flex-direction: column;
   position: absolute;
   width: 100%;
@@ -77,11 +77,10 @@ body {
   top: calc(var(--header-height) - 1px);
   z-index: 1000;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   gap: 50px;
   font-size: 35px;
 }
-
 
 .hamburger-menu a:last-child {
   margin-bottom: 15vh;
@@ -114,7 +113,7 @@ body {
 }
 
 .nav__item:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer {
@@ -204,8 +203,8 @@ body {
   display: none;
   width: 400px;
   padding: 15px;
-  background-color: rgb(24, 24, 32); /* White background */
-  border: var(--border); /* Green border */
+  background-color: rgb(24, 24, 32);
+  border: var(--border);
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   position: fixed;
