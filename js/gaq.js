@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const serviceInput = document.querySelector("form > input[type=text]");
   const emailInput = document.querySelector("form > input[type=email]");
   const personalMessageInput = document.querySelector("form > textarea");
+  const submitButton = document.querySelector("form > button[type=submit]");
 
   serviceInput.value = serviceText;
 
@@ -14,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       subject: "get a quote",
       service: serviceInput?.value,
       email: emailInput?.value,
-      personalMessage:personalMessageInput?.value
+      personalMessage: personalMessageInput?.value,
     };
 
     const postData = async (data) => {
@@ -57,18 +58,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const handlePostData = async () => {
+      submitButton.innerHTML = `<div class="loading"></div>`;
       const res = await postData(data);
+      console.log(res?.message);
+      await new Promise((resolve) => setTimeout(resolve, 1500000));
 
-      if (res.success) {
-        showFeedback(res.message, true);
-        console.log(res.message);
-        
-        // setTimeout(() => {
-        //   window.open("index.html");
-        // }, 1200);
+      if (res?.success) {
+        showFeedback(res?.message, true);
+        console.log(res?.message);
+
+        setTimeout(() => {
+          window.open("index.html", "_self");
+        }, 1200);
       } else {
-        showFeedback(res.message, false);
+        showFeedback(res?.message, false);
       }
+      submitButton.textContent = "Send";
     };
 
     handlePostData();
