@@ -60,3 +60,41 @@ form button[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 60px;
+    flex-direction: column;
+  }
+
+  section {
+    width: 98%;
+    height: 400px;
+  }
+
+  section h2 {
+    font-size: 16px;
+  }
+
+  form {
+    width: 100%;
+    padding: 0px;
+    gap: 10px;
+  }
+
+  form input {
+    width: 95%;
+    padding: 10px 2px;
+  }
+
+  form textarea {
+    min-width: 95%;
+    min-height: 160px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  form button[type="submit"] {
+    padding: 8px 4px;
+  }
+}
