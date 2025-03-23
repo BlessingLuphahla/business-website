@@ -9,7 +9,7 @@ main {
 
 section {
   width: 60%;
-  height: 400px;
+  height: 500px;
   background: var(--red-gradient);
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@ form {
   width: max-content;
   padding: 10px;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 
 form input {
@@ -39,6 +39,16 @@ form input {
 }
 
 form input:focus {
+  outline: none;
+}
+
+form textarea {
+  min-width: 600px;
+  min-height: 200px;
+  padding: 10px;
+}
+
+form textarea:focus {
   outline: none;
 }
 

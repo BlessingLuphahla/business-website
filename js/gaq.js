@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("main form");
   const serviceInput = document.querySelector("form > input[type=text]");
   const emailInput = document.querySelector("form > input[type=email]");
+  const personalMessageInput = document.querySelector("form > textarea");
 
   serviceInput.value = serviceText;
 
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       subject: "get a quote",
       service: serviceInput?.value,
       email: emailInput?.value,
+      personalMessage:personalMessageInput?.value
     };
 
     const postData = async (data) => {
@@ -59,9 +61,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (res.success) {
         showFeedback(res.message, true);
-        setTimeout(() => {
-          window.open("index.html", +"_self");
-        }, 2000);
+        console.log(res.message);
+        
+        // setTimeout(() => {
+        //   window.open("index.html");
+        // }, 1200);
       } else {
         showFeedback(res.message, false);
       }
