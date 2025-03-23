@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
       submitButton.innerHTML = `<div class="loading"></div>`;
       const res = await postData(data);
       console.log(res?.message);
-      await new Promise((resolve) => setTimeout(resolve, 1500000));
 
       if (res?.success) {
         showFeedback(res?.message, true);
