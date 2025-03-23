@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const postData = async (data) => {
-      const urlLink = "http://localhost:5000/getAQuote";
+      const urlLink = "http://express-business-site-backend.onrender.com/getAQuote";
 
       const jsonData = JSON.stringify(data);
       try {
@@ -60,11 +60,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const handlePostData = async () => {
       submitButton.innerHTML = `<div class="loading"></div>`;
       const res = await postData(data);
-      console.log(res?.message);
 
       if (res?.success) {
         showFeedback(res?.message, true);
-        console.log(res?.message);
 
         setTimeout(() => {
           window.open("index.html", "_self");

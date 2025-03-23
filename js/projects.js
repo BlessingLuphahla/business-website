@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const postData = async (data) => {
-      const urlLink = "http://localhost:5000/emails";
+      const urlLink = "http://express-business-site-backend.onrender.com/emails";
 
       const jsonData = JSON.stringify(data);
       try {
