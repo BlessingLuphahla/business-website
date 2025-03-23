@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         showFeedback(res?.message, false);
       }
-      submitButton.textContent = "Send";
+      submitButton.textContent = "GET A QUOTE";
     };
 
     handlePostData();
