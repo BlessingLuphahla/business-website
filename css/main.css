@@ -283,7 +283,7 @@ body {
   width: var(--side);
   height: var(--side);
   border-radius: 50%;
-  background: var(--red-gradient);
+  background: rgb(0, 255, 0);
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -291,6 +291,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  padding: 2px;
 }
 
 .whatsapp-logo {
