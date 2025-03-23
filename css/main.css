@@ -57,6 +57,10 @@ body {
   left: 0;
 }
 
+.header > a {
+  text-decoration: none !important;
+}
+
 .open-menu {
   display: none;
   width: 40px;
