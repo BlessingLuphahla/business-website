@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const postData = async (data) => {
-      const urlLink = "http://express-business-site-backend.onrender.com/getAQuote";
+      const urlLink = "https://express-business-site-backend.onrender.com/getAQuote";
 
       const jsonData = JSON.stringify(data);
       try {
