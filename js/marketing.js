@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   getAQuote.forEach((button) => {
     button.addEventListener("click", function () {
       const service = button.parentElement.previousElementSibling.textContent;
-      window.open(`get-a-quote.html?service=${service}`, "_blank");
+      window.open(`get-a-quote.html?service=Marketing => ${service}`, "_self");
     });
   });
 });

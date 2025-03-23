@@ -1,0 +1,52 @@
+main {
+  height: 75vh;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 60%;
+  height: 400px;
+  background: var(--red-gradient);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section h2 {
+  font-size: 20px;
+  color: white;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  width: max-content;
+  padding: 10px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+form input {
+  padding: 10px;
+  width: 300px;
+  font-size: 14px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button[type="submit"] {
+  border: none;
+  background-color: white;
+  color: var(--red-gradient);
+  padding: 12px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
