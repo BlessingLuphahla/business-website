@@ -8,19 +8,19 @@
   </url>
 
   <url>
-    <loc>https://DYNAMICDIGDES/about</loc>
+    <loc>https://DYNAMICDIGDES/about.html</loc>
     <lastmod>2025-03-20</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://DYNAMICDIGDES/projects</loc>
+    <loc>https://DYNAMICDIGDES/projects.html</loc>
     <lastmod>2025-03-18</lastmod>
     <priority>0.70</priority>
   </url>
 
   <url>
-    <loc>https://DYNAMICDIGDES/contact</loc>
+    <loc>https://DYNAMICDIGDES/contact.html</loc>
     <lastmod>2025-03-15</lastmod>
     <priority>0.60</priority>
   </url>
