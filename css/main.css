@@ -199,11 +199,8 @@ body {
 }
 
 .active {
-  background-color: white;
-  color: var(--dark-red);
-  font-size: 20px;
-  font-weight: 700;
-  padding: calc(var(--header-height) / 2 - 25px) 12px;
+  font-size: 25px;
+  font-weight: 900;
   border-radius: 5px;
 }
 /*  setting up sm preview */
