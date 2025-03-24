@@ -1,5 +1,3 @@
 user-agent:*
-Disallow:/css
-Disallow:/js
-Disallow:/images
-Disallow:/fonts
+Allow: /
+Sitemap: https://DYNAMICDIGDES/sitemap.xml
