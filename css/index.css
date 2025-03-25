@@ -11,6 +11,7 @@
   width: 100%;
   height: var(--hero-image-height);
   position: relative;
+  box-shadow: var(--box-shadow);
 }
 
 .section-title {
@@ -100,7 +101,7 @@ section {
 }
 
 .index__hero-logo {
-  background-color: var(--dark-red);
+  background: var(--red-gradient);
   padding: 5px 110px;
   margin: 0;
   color: white;
@@ -110,16 +111,21 @@ section {
   justify-content: center;
   position: absolute;
   bottom: -120px;
+  box-shadow: var(--box-shadow);
+  border: 1px solid #1e1e1e;
 }
 
 .call-to-action {
   width: 95%;
+  box-shadow: var(--box-shadow);
 }
 
 .introContainer a {
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+  box-shadow: var(--box-shadow);
+  padding: 10px 8px;
 }
 
 .index__hero-logo img {
@@ -225,6 +231,7 @@ section {
   border: 1px solid var(--color);
   padding: 10px;
   border-radius: 5px;
+  box-shadow: var(--box-shadow);
 }
 
 /* Media Queries */
