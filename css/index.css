@@ -109,7 +109,7 @@ section {
 }
 
 .call-to-action {
-  width: 95% !important;
+  width: 95%;
 }
 
 .introContainer a {
@@ -322,6 +322,10 @@ section {
 
   .index__hero-text p {
     font-size: 16px;
+  }
+
+  .call-to-action {
+    padding: 10px !important;
   }
 }
 
