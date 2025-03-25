@@ -69,7 +69,6 @@ body {
   width: 40px;
   height: 40px;
   margin-top: calc(var(--header-height) / 5);
-  color: white;
 }
 
 .main-container {
@@ -79,18 +78,16 @@ body {
 
 .hamburger-menu {
   display: none;
-  background: var(--red-gradient);
+  background: white;
   flex-direction: column;
   position: absolute;
   width: 100%;
-  color: white;
+  top: 90px;
   height: 95vh;
-  top: calc(var(--header-height) - 1px);
   z-index: 1000;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-  font-size: 35px;
+  gap: 20px;
 }
 
 .hamburger-menu a:last-child {
@@ -370,9 +367,11 @@ body {
   .footer__section--contact {
     margin-left: 18vw;
   }
+
   .nav__item {
-    font-size: 30px;
+    font-size: 20px !important;
     font-weight: 500;
+    color: var(--dark-red);
   }
 
   .close-btn {
