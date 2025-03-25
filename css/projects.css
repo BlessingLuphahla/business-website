@@ -10,17 +10,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
 .project {
+  padding: 5px;
+  border: 1px solid #1e1e1e;
+  margin: 0;
   width: 500px;
-  height: 500px;
+  height: 550px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: var(--box-shadow);
+}
+
+.projectTextWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .projectImg {
