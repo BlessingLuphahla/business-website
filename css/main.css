@@ -82,12 +82,13 @@ body {
   flex-direction: column;
   position: absolute;
   width: 100%;
-  top: 90px;
-  height: 95vh;
-  z-index: 1000;
+  top: 75px;
+  height: 90vh;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
   align-items: center;
   justify-content: center;
-  gap: 20px;
 }
 
 .hamburger-menu a:last-child {
@@ -369,7 +370,7 @@ body {
   }
 
   .nav__item {
-    font-size: 20px !important;
+    font-size: 15px !important;
     font-weight: 500;
     color: var(--dark-red);
   }
