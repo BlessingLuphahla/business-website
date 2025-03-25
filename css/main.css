@@ -230,7 +230,7 @@ body {
 .online-status {
   width: 15px;
   height: 15px;
-  background-color: #00ff00; /* Green for online status */
+  background-color: #00ff00;
   border-radius: 50%;
 }
 
@@ -244,7 +244,7 @@ body {
 }
 
 .time {
-  color: white; /* Grey color for time */
+  color: white;
   font-size: 16px;
   font-weight: 900;
 }
@@ -261,7 +261,7 @@ body {
 .message-preview {
   text-align: center;
   font-size: 16px;
-  color: white; /* Dark text */
+  color: white;
 }
 
 .message-preview a {
@@ -308,6 +308,19 @@ body {
   border-top: 3px solid rgb(0, 148, 254);
   border-radius: 50%;
   animation: spinner 1s linear infinite;
+}
+
+.call-to-action {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  padding: 10px 5px;
+  border: 1px solid white;
+  width: 80%;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
 }
 
 @keyframes spinner {
