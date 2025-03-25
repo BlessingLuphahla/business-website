@@ -91,9 +91,12 @@ section {
   line-height: 20px;
 }
 
-.index__hero-image img {
+.index__hero-image .main-image {
   width: 100%;
   height: 100%;
+  background-color: #1e1e1e;
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
 }
 
 .index__hero-logo {
@@ -235,6 +238,10 @@ section {
     display: flex;
     flex-direction: column;
     --hero-image-height: 310px;
+  }
+
+  .index__hero-image .main-image {
+    background-size: auto;
   }
 
   .services {
