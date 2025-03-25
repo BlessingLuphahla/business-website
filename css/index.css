@@ -114,7 +114,9 @@ section {
 
 .index__hero-logo img {
   width: 204px;
-  height: 150px;
+  height: 200px;
+  padding: 0;
+  margin: 0;
 }
 
 .index__hero-logo p {
