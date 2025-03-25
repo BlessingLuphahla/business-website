@@ -1,4 +1,4 @@
 user-agent:*
 Allow: /
 
-Sitemap: https://dynamicdigitaldesigns.vercel.app/sitemap.xml
+Sitemap: https://luxurydigitalagency.vercel.app/sitemap.xml
