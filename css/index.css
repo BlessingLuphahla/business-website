@@ -216,6 +216,17 @@ section {
   top: 14px;
 }
 
+.get-started {
+  --color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color);
+  border: 1px solid var(--color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
 /* Media Queries */
 @media (max-width: 1385px) {
   .services {
@@ -242,6 +253,10 @@ section {
 
   .index__hero-image .main-image {
     background-size: auto;
+  }
+
+  .index__hero-logo {
+    bottom: -85px !important;
   }
 
   .services {

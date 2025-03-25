@@ -1,16 +1,14 @@
 /* Main Section */
 .main-section {
   background: var(--red-gradient);
-  --margin: 50px;
   padding: 20px;
   width: 70%;
   max-width: 99%;
   position: relative;
   top: calc(var(--header-height) + var(--margin));
-  margin: 50px;
+  margin: 50px 0;
   border: var(--border);
   align-self: center;
-  margin-bottom: calc(var(--header-height) + var(--margin) + 120px);
   border-radius: var(--border-radius);
 }
 

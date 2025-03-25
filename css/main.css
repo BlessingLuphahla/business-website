@@ -13,6 +13,8 @@
   --border-radius: 1px;
   --red-gradient: linear-gradient(500deg, #510202, #7f0303, #510202);
   --vibrate-distance: 2px;
+
+  scroll-behavior: smooth;
 }
 
 /* fonts */
@@ -52,7 +54,7 @@ body {
   background: var(--red-gradient);
   width: 100%;
   height: var(--header-height);
-  position: fixed;
+  position: sticky;
   z-index: 1000;
   top: 0;
   left: 0;
