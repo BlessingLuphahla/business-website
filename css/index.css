@@ -14,8 +14,10 @@
 }
 
 .section-title {
-  font-size: 30px;
+  font-size: 35px;
   color: var(--dark-red);
+  width: 100%;
+  text-align: center;
 }
 
 .introContainer {
