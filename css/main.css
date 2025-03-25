@@ -31,8 +31,9 @@
   src: url(../fonts/Roboto-Thin.ttf);
 }
 
-footer.footer img {
+footer.footer img.footerMainImage {
   cursor: pointer;
+  height: 200px !important;
 }
 
 * {
