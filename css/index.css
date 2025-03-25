@@ -20,6 +20,13 @@
   text-align: center;
 }
 
+.introContainer img {
+  width: 100%;
+  height: 900px;
+  margin-bottom: 5px;
+  background: var(--red-gradient);
+}
+
 .introContainer {
   width: 75%;
   height: max-content;
