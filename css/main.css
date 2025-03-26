@@ -206,78 +206,79 @@ body {
 }
 /*  setting up sm preview */
 .social-preview {
-  display: none;
-  width: 400px;
-  padding: 15px;
-  background-color: rgb(24, 24, 32);
-  border: var(--border);
-  border-radius: 10px;
-  box-shadow: var(--box-shadow);
   position: fixed;
-  bottom: 100px;
-  right: 100px;
+  bottom: 70px;
+  right: 70px;
+  background-color: white;
+  height: 300px;
+  width: 350px;
+  color: var(--dark-red);
+  display: flex;
   flex-direction: column;
-  color: white;
+  align-items: center;
 }
 
 .social-preview-header {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
   align-items: center;
-  margin-bottom: 10px;
-  color: white;
+  width: 90%;
 }
 
 .online-status {
-  width: 15px;
-  height: 15px;
-  background-color: #00ff00;
+  background-color: rgb(0, 255, 0);
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
 }
 
 .online-status::after {
   content: "online";
-  color: white;
-  margin: 5px;
-  position: relative;
-  left: 15px;
-  bottom: 2px;
+  margin-left: 15px;
+  font-size: 12px;
 }
 
 .time {
-  color: white;
-  font-size: 16px;
-  font-weight: 900;
+  color: var(--dark-red);
+  font-size: 12px;
 }
 
 .profile-pic {
-  width: 100px;
-  height: 100px;
   background: url("../images/software-2.jpg");
-  border-radius: 50%;
+  width: 95px;
+  height: 95px;
   background-size: cover;
-  margin: 0 auto 10px;
+  border-radius: 50%;
+  background-color: var(--dark-red);
 }
 
 .message-preview {
-  text-align: center;
-  font-size: 16px;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  align-items: center;
+  justify-content: center;
 }
 
 .message-preview a {
-  display: inline-block;
-  padding: 20px 25px;
-  background-color: var(--dark-red);
-  color: white;
   text-decoration: none;
+  padding: 10px 8px;
+  background-color: var(--dark-red);
+  margin: 2px;
+  color: white;
   border-radius: 5px;
-  margin-top: 15px;
 }
 
 .close-btn {
-  color: white;
+  background-color: var(--dark-red);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
   cursor: pointer;
+  width: 20px;
+  height: 20px;
 }
 
 .whatsapp {
