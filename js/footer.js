@@ -1,135 +1,116 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const emailHref =
-    "mailto: luphahlablessingthamsanqa@gmail.com?subject=Business&body=Hey Dynamic Digital Design can you";
-  const linkedinHref = "";
-  const facebookHref = "";
-  const phoneHref = "tel:+263788793302";
-  const whatsappHref =
-    "https://wa.me/27681595429?text=Hey Dynamic Digital Design ";
+  const contactLinks = {
+    email:
+      "mailto: luphahlablessingthamsanqa@gmail.com?subject=Business&body=Hey Dynamic Digital Design can you",
+    linkedin: "",
+    facebook: "",
+    phone: "tel:+263788793302",
+    whatsapp: "https://wa.me/27681595429?text=Hey Dynamic Digital Design ",
+  };
 
-  const gmail = document.querySelector(".gmail");
-  const linkedin = document.querySelector(".linkedin");
-  const call = document.querySelector(".call");
-  const facebook = document.querySelector(".facebook");
-  const footerLogo = document.querySelector(".footer img");
+  const elements = {
+    gmail: document.querySelector(".gmail"),
+    linkedin: document.querySelector(".linkedin"),
+    call: document.querySelector(".call"),
+    facebook: document.querySelector(".facebook"),
+    footerLogo: document.querySelector(".footer img"),
+  };
 
   const previewContainer = document.createElement("div");
   previewContainer.classList.add("social-preview");
+  document.body.appendChild(previewContainer);
 
   const whatsapp = document.createElement("div");
   const whatsappLogo = document.createElement("div");
 
   whatsappLogo.classList.add("whatsapp-logo");
-  whatsapp.classList.add("whatsapp");
-  whatsapp.classList.add("roll-in-blurred-left");
-  whatsapp.classList.add("vibrate-1");
+  whatsapp.classList.add("whatsapp", "roll-in-blurred-left", "vibrate-1");
   whatsapp.appendChild(whatsappLogo);
   document.body.appendChild(whatsapp);
 
-  function previewContainerEdit(title, message, buttonText, link = "#") {
+  function updatePreview(title, message, buttonText, link = "#") {
     previewContainer.style.display = "flex";
-
-    // Content of the preview
     previewContainer.innerHTML = `
-    <div class="social-preview-header">
-    <div class="online-status"></div>
-    <span class="time">2:30 PM</span>
-    <img src="images/close.svg" class="close-btn">
-    </div>
-    <div class="profile-pic">
-    </div>
-    <div class="message-preview">
-    <h2>${title}</h2>
-    <p>${message}</p>
-    <a href="${link}">${buttonText}</a>
-    </div>
+      <div class="social-preview-header">
+        <div class="online-status"></div>
+        <span class="time"></span>
+        <img src="images/close.svg" class="close-btn">
+      </div>
+      <div class="profile-pic"></div>
+      <div class="message-preview">
+        <h2>${title}</h2>
+        <p>${message}</p>
+        <a href="${link}">${buttonText}</a>
+      </div>
     `;
-    // setting up time
-    const timeDiv = document.querySelector(".social-preview-header span");
-    const tempTime = new Date();
-    const hour =
-      tempTime.getHours().toString().length != 2
-        ? "0" + tempTime.getHours().toString()
-        : tempTime.getHours().toString();
-    const min =
-      tempTime.getMinutes().toString().length != 2
-        ? "0" + tempTime.getMinutes().toString()
-        : tempTime.getMinutes().toString();
-    const meridian = Number(hour.trim()) < 12 ? "AM" : "PM";
-    const time = `${hour}:${min} ${meridian}`;
 
-    timeDiv.textContent = time;
+    // Update time display
+    const timeDiv = previewContainer.querySelector(
+      ".social-preview-header .time"
+    );
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    const meridian = hours < 12 ? "AM" : "PM";
+    timeDiv.textContent = `${hours % 12 || 12}:${minutes} ${meridian}`;
 
-    // Event listener to close the preview
-    document.querySelector(".close-btn").addEventListener("click", function () {
-      previewContainer.style.display = "none";
-    });
+    // Close button functionality
+    previewContainer
+      .querySelector(".close-btn")
+      .addEventListener("click", () => {
+        previewContainer.style.display = "none";
+      });
   }
 
-  footerLogo.addEventListener("click", function () {
+  elements.footerLogo.addEventListener("click", () => {
     if (!window.location.href.includes("index.html")) {
       window.location.href = "index.html";
     }
   });
 
-  document.body.appendChild(previewContainer);
+  let whatsappIsOpen = false;
 
-  var whatsappIsOpen = false;
-
-  // Event listener to show the preview
-  whatsapp.addEventListener("click", function () {
+  whatsapp.addEventListener("click", () => {
     if (!whatsappIsOpen) {
-      previewContainerEdit(
-        (title = "whatsapp"),
-        (message = "Connect with us via whatsapp"),
-        (buttonText = "Send A message"),
-        (link = whatsappHref)
+      updatePreview(
+        "WhatsApp",
+        "Connect with us via WhatsApp",
+        "Send a Message",
+        contactLinks.whatsapp
       );
-      whatsappIsOpen = true;
-    } else {
-      whatsappIsOpen = false;
-      previewContainer.style.display = "none";
     }
+    previewContainer.style.display = whatsappIsOpen ? "none" : "flex";
+    whatsappIsOpen = !whatsappIsOpen;
   });
 
-  gmail.addEventListener("click", function () {
-    previewContainerEdit(
-      (title = "email"),
-      (message = "Connect with us via email"),
-      (buttonText = "Send An email"),
-      (link = emailHref)
-    );
-  });
+  elements.gmail.addEventListener("click", () =>
+    updatePreview(
+      "Email",
+      "Connect with us via Email",
+      "Send an Email",
+      contactLinks.email
+    )
+  );
 
-  linkedin.addEventListener("click", function () {
-    previewContainerEdit(
-      (title = "linkedin"),
-      (message = "Connect with us on linkedin"),
-      (buttonText = "visit linkedIn Profile"),
-      (link = linkedinHref)
-    );
-  });
+  elements.linkedin.addEventListener("click", () =>
+    updatePreview(
+      "LinkedIn",
+      "Connect with us on LinkedIn",
+      "Visit LinkedIn Profile",
+      contactLinks.linkedin
+    )
+  );
 
-  call.addEventListener("click", function () {
-    previewContainerEdit(
-      (title = "Call"),
-      (message = "Reach us by phone"),
-      (buttonText = "call now"),
-      (link = phoneHref)
-    );
-  });
+  elements.call.addEventListener("click", () =>
+    updatePreview("Call", "Reach us by Phone", "Call Now", contactLinks.phone)
+  );
 
-  facebook.addEventListener("click", function () {
-    previewContainerEdit(
-      (title = "Facebook"),
-      (message = "Follow us on facebook"),
-      (buttonText = "Visit Facebook Page"),
-      (link = facebookHref)
-    );
-  });
+  elements.facebook.addEventListener("click", () =>
+    updatePreview(
+      "Facebook",
+      "Follow us on Facebook",
+      "Visit Facebook Page",
+      contactLinks.facebook
+    )
+  );
 });
-
-window.onload = () => {
-  var newPreviewContainer = document.querySelector(".social-preview");
-  newPreviewContainer.style.display = "none";
-};

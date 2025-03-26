@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const submitButton = document.querySelector(
     "form button[type=submit].contact-form__button"
   );
+
+  const customMessage = document.querySelector(
+    ".main-section-wrapper textarea#textarea"
+  );
+
   let data;
 
   form.addEventListener("submit", function (event) {
@@ -103,11 +108,13 @@ document.addEventListener("DOMContentLoaded", function () {
       email: emailInput.value.trim(),
       company: companyInput.value.trim(),
       checkboxQueries: checkboxQueries.trim(),
-      subject:"I want to contact you"
+      subject: "I want to contact you",
+      message: customMessage.value.trim(),
     };
 
     const postData = async (data) => {
-      const urlLink = "https://express-business-site-backend.onrender.com/emails";
+      const urlLink =
+        "https://express-business-site-backend.onrender.com/emails";
 
       const jsonData = JSON.stringify(data);
       try {
