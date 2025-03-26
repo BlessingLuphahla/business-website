@@ -33,7 +33,7 @@
       <a href="contact.html" class="nav__item active">Contact Us</a>
       <a href="privacy policy.html" class="nav__item">Privacy Policy</a>
       <a href="t's and c's.html" class="nav__item">T's and C's</a>
-      
+
     </div>
   </div>
 
@@ -62,14 +62,23 @@
         <label for="company" class="contact-form__label">Company</label>
         <input type="text" id="company" class="contact-form__input" />
       </div>
-      <div class="checkbox-group">
-        <input type="checkbox" id="marketing" name="options" />
-        <label for="marketing">Marketing</label>
-        <input type="checkbox" id="software" name="options" />
-        <label for="software">Software Development</label>
-        <input type="checkbox" id="web" name="options" />
-        <label for="web">web development</label>
+      <div>
+
+        <div class="contact-form__input-group">
+          <textarea name="textarea" id="textarea" placeholder="Write text Here"></textarea>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="marketing" name="options" />
+          <label for="marketing">Marketing</label>
+          <input type="checkbox" id="software" name="options" />
+          <label for="software">Software Development</label>
+          <input type="checkbox" id="web" name="options" />
+          <label for="web">web development</label>
+          <input type="checkbox" id="questions" name="options" />
+          <label for="questions">Questions</label>
+        </div>
       </div>
+
       <button type="submit" class="contact-form__button">Send</button>
     </form>
   </section>
