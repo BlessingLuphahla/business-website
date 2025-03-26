@@ -38,49 +38,62 @@
   </div>
 
   <section class="main-section">
-    <div class="main-section__title roll-in-blurred-left">Contact Us</div>
-    <p>Lets Discuss how we can take your vision to the next level.Have a question or a project in mind? Send us a
-      message we will respond as soon as possible</p>
-    <form class="contact-form roll-in-blurred-left" id="contact-form">
-      <div class="contact-form__input-group">
-        <label for="first-name" class="contact-form__label">First Name</label>
-        <input type="text" id="first-name" class="contact-form__input" required />
-      </div>
-      <div class="contact-form__input-group">
-        <label for="last-name" class="contact-form__label">Last Name</label>
-        <input type="text" id="last-name" class="contact-form__input" required />
-      </div>
-      <div class="contact-form__input-group">
-        <label for="phone-number" class="contact-form__label">Phone Number</label>
-        <input type="text" id="phone-number" class="contact-form__input" required />
-      </div>
-      <div class="contact-form__input-group">
-        <label for="email" class="contact-form__label">Email Address</label>
-        <input type="email" id="email" class="contact-form__input" required />
-      </div>
-      <div class="contact-form__input-group">
-        <label for="company" class="contact-form__label">Company</label>
-        <input type="text" id="company" class="contact-form__input" />
-      </div>
-      <div>
+    <div class="main-section-wrapper">
+      <div class="main-section__title roll-in-blurred-left">Contact Us</div>
+      <p>Lets Discuss how we can take your vision to the next level.Have a question or a project in mind? Send us a
+        message we will respond as soon as possible</p>
+      <form class="contact-form roll-in-blurred-left" id="contact-form">
+        <div class="contact-form-inputs">
+          <div class="contact-form__input-group">
+            <label for="first-name" class="contact-form__label">First Name</label>
+            <input type="text" id="first-name" class="contact-form__input" required />
+          </div>
+          <div class="contact-form__input-group">
+            <label for="phone-number" class="contact-form__label">Phone Number</label>
+            <input type="text" id="phone-number" class="contact-form__input" required />
+          </div>
+          <div class="contact-form__input-group">
+            <label for="last-name" class="contact-form__label">Last Name</label>
+            <input type="text" id="last-name" class="contact-form__input" required />
+          </div>
+          <div class="contact-form__input-group">
+            <label for="email" class="contact-form__label">Email Address</label>
+            <input type="email" id="email" class="contact-form__input" required />
+          </div>
+          <div class="contact-form__input-group">
+            <label for="company" class="contact-form__label">Company</label>
+            <input type="text" id="company" class="contact-form__input" />
+          </div>
+          <div>
+          </div>
+        </div>
 
         <div class="contact-form__input-group">
           <textarea name="textarea" id="textarea" placeholder="Write text Here"></textarea>
         </div>
-        <div class="checkbox-group">
-          <input type="checkbox" id="marketing" name="options" />
-          <label for="marketing">Marketing</label>
-          <input type="checkbox" id="software" name="options" />
-          <label for="software">Software Development</label>
-          <input type="checkbox" id="web" name="options" />
-          <label for="web">web development</label>
-          <input type="checkbox" id="questions" name="options" />
-          <label for="questions">Questions</label>
+        <div class="checkbox-groups">
+          <div class="checkbox-group">
+            <input type="checkbox" id="marketing" name="options" />
+            <label for="marketing">Marketing</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="software" name="options" />
+            <label for="software">Software Development</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="web" name="options" />
+            <label for="web">web development</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="questions" name="options" />
+            <label for="questions">Questions</label>
+          </div>
         </div>
-      </div>
-
-      <button type="submit" class="contact-form__button">Send</button>
-    </form>
+        <div class="buttonWrapper">
+          <button type="submit" class="contact-form__button">Send</button>
+        </div>
+      </form>
+    </div>
   </section>
   <!-- Footer Section -->
   <footer class="footer">
