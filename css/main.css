@@ -13,7 +13,6 @@
   --border-radius: 1px;
   --red-gradient: linear-gradient(500deg, #510202, #7f0303, #510202);
   --vibrate-distance: 2px;
-
   scroll-behavior: smooth;
 }
 

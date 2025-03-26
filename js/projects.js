@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const title =
         el.firstElementChild.nextElementSibling.firstElementChild.textContent;
-      const desc =
-        el.firstElementChild.nextElementSibling.lastElementChild.textContent;
+      const desc = el.querySelector(".projectDesc").textContent;
       const hiddenTextElement = el.querySelector(".hiddenText");
 
       const link = el.lastElementChild.getAttribute("href");

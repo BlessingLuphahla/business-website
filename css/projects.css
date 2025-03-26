@@ -24,6 +24,7 @@
   align-items: center;
   flex-direction: column;
   box-shadow: var(--box-shadow);
+  cursor: pointer;
 }
 
 .project-preview {
@@ -42,7 +43,7 @@
 }
 
 .previewWrapper {
-  background: var(--red-gradient) ;
+  background: var(--dark-red);
   color: white;
   width: 900px;
   height: 800px;
@@ -52,6 +53,7 @@
   padding: 20px;
   position: relative;
   top: 120px;
+  gap: 20px;
 }
 
 .previewText {
@@ -63,6 +65,7 @@
   flex-direction: column;
   gap: 20px;
   text-align: center;
+  font-size: 15px;
 }
 
 .previewNote {
@@ -70,13 +73,12 @@
   color: rgb(0, 179, 255);
 }
 
-.previewNote a.previewNoteLink{
+.previewNote a.previewNoteLink {
   padding: 0;
   margin: 0;
   background-color: transparent;
   color: rgb(0, 255, 0);
 }
-
 
 .hiddenText {
   display: none;
@@ -91,8 +93,8 @@
 }
 
 .previewImage {
-  height: 500px;
-  width: 820px;
+  height: 900px;
+  width: 100%;
 }
 
 .previewWrapper .close {
@@ -115,7 +117,7 @@
 
 .projectImg {
   width: 100%;
-  height: auto;
+  height: 1200px !important;
 }
 
 .main-section-title {
@@ -123,3 +125,23 @@
   color: var(--dark-red);
   text-align: center;
 }
+
+.runPreviewWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.runPreview {
+  margin: 10px;
+  border: 1px solid var(--dark-red);
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: var(--dark-red);
+  width: 100px;
+  color: white;
+}
+
+
