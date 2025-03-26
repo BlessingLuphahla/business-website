@@ -49,6 +49,7 @@
 .main-section-wrapper .contact-form__input-group label {
   font-size: 14px;
   font-weight: 200;
+  text-transform: capitalize;
 }
 
 .main-section-wrapper .contact-form__input-group input {
@@ -95,6 +96,11 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.checkbox-groups .checkbox-group label {
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .feedback {
