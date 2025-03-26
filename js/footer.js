@@ -128,3 +128,8 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 });
+
+window.onload = () => {
+  var newPreviewContainer = document.querySelector(".social-preview");
+  newPreviewContainer.style.display = "none";
+};
