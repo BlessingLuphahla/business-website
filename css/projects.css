@@ -71,6 +71,7 @@
 .previewNote {
   font-size: 14px;
   color: rgb(0, 179, 255);
+  text-transform: capitalize;
 }
 
 .previewNote a.previewNoteLink {

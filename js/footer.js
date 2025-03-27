@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const contactLinks = {
     email:
-      "mailto: luphahlablessingthamsanqa@gmail.com?subject=Business&body=Hey Dynamic Digital Design can you",
+      "mailto: luphahlablessingthamsanqa@gmail.com?subject=Business Inquiry&body=Hi Luxury Digital Agency ",
     linkedin: "",
-    facebook: "",
+    facebook: "https://www.facebook.com/share/1AEXQjig4K/",
     phone: "tel:+263788793302",
-    whatsapp: "https://wa.me/27681595429?text=Hey Dynamic Digital Design ",
+    whatsapp: "https://wa.me/27681595429?text=Hi Luxury Digital Agency ",
   };
 
   const elements = {

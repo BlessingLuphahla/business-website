@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const title =
         el.firstElementChild.nextElementSibling.firstElementChild.textContent;
-      const desc = el.querySelector(".projectDesc").textContent;
+      const desc = el.querySelector(".projectDesc").childNodes[0].textContent.trim();
       const hiddenTextElement = el.querySelector(".hiddenText");
 
       const link = el.lastElementChild.getAttribute("href");
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
            <div class="previewText">
             <div class="close">×</div>
               <h2 class="previewProjectTitle">${title}</h2>
-              <div class="previewNote">Please Note That Due To Our <a class="previewNoteLink" href="privacy policy.html">Privacy Policy</a> We Can Not display actual projects of clients, just a similar project with core features</div>
+              <div class="previewNote">Please Note That Due To Our <a class="previewNoteLink" href="privacy policy.html">Privacy Policy</a> We Cannot display actual projects of clients, just a similar project with core features</div>
             <div class="previewDesc">${
               desc + hiddenTextElement.textContent
             }</div>
@@ -49,9 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       close.addEventListener("click", function () {
         isOpen = false;
         projectPreview.style.display = "none";
-        this.removeEventListener("click");
       });
     });
   });
-  console.log(description);
 });
