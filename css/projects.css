@@ -125,6 +125,9 @@
   font-size: 25px;
   color: var(--dark-red);
   text-align: center;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
 }
 
 .runPreviewWrapper {
@@ -146,8 +149,9 @@
 }
 
 .procedure {
-  width: 100%;
+  width: 96%;
   height: max-content;
+  padding: 5px;
 }
 
 .procedureWrapper {
