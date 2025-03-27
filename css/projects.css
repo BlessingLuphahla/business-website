@@ -188,8 +188,16 @@
   line-height: 24px;
 }
 
-.procedureDesc {
+.procedureDescWrapper {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.procedureDesc {
+  width: 70%;
   text-align: center;
 }
 
@@ -250,5 +258,42 @@
 
   .main-section-title {
     font-size: 20px;
+  }
+
+  .procedureWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .procedureWrapper .procedure-item {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .procedureWrapper .procedure-item img {
+    height: 450px;
+  }
+
+  .procedureWrapper .procedure-item .desc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .downloadable {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .procedureDescWrapper {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .procedureDesc {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
   }
 }
