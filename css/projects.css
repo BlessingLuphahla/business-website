@@ -164,26 +164,43 @@
 }
 
 .procedureWrapper .procedure-item {
-  width: 600px;
-  height: 700px;
-  padding: 10px;
+  width: 650px;
+  height: 750px;
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #1e1e1e;
   box-shadow: var(--box-shadow);
 }
 
 .procedureWrapper .procedure-item img {
   width: 100%;
-  height: 80%;
+  height: 550px;
+}
+
+.procedureWrapper .procedure-item .desc {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .procedureDesc {
   width: 100%;
   text-align: center;
+}
+
+.downloadable {
+  text-decoration: none;
+  padding: 8px 20px;
+  border: 1px solid black;
+  color: white;
+  background-color: var(--dark-red);
+  border-radius: 5px;
+  text-transform: capitalize;
 }
 
 @media (max-width: 768px) {
