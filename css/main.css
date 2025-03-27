@@ -519,3 +519,9 @@ body {
   -webkit-animation: var(--animation);
   animation: var(--animation);
 }
+
+a.approach {
+  margin: 0 2px !important;
+  padding: 0 !important;
+  color: rgb(0, 208, 255) !important;
+}
