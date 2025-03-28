@@ -266,9 +266,23 @@ section {
   }
 
   .index__hero-logo {
-    bottom: -85px !important;
+    height: 130px !important;
+    bottom: -90px !important;
     background-position: 10;
-    height: 500px;
+    opacity: 0.9;
+  }
+
+  .index__hero-logo p {
+    position: relative;
+    bottom: 10px;
+  }
+
+  .index__hero-logo a {
+    background-color: #898F9F;
+    margin-top: 90px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    width: max-content !important;
   }
 
   .services {
