@@ -145,8 +145,6 @@ section {
   color: white;
   text-wrap: nowrap;
   position: relative;
-  box-shadow: var(--box-shadow);
-  padding: 5px;
   position: relative;
   bottom: 10px;
 }
