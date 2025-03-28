@@ -1,7 +1,7 @@
 :root {
   /* setting up constants */
 
-  --dark-red: #770505;
+  --dark-red: #898F9F;
   --light-red: rgb(212, 8, 8);
   --body-bg: rgba(250, 250, 250, 1);
   --border: 1px solid rgba(0, 0, 0, 0.1);
@@ -11,7 +11,7 @@
   --header-title-font-size: 20px;
   --box-shadow: #00000097 0px 0px 5px;
   --border-radius: 1px;
-  --red-gradient: linear-gradient(500deg, #510202, #7f0303, #510202);
+  --red-gradient: linear-gradient(500deg, #898F9B, #898F9F, #898F9B);
   --vibrate-distance: 2px;
   scroll-behavior: smooth;
 }

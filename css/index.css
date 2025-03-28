@@ -106,18 +106,22 @@ section {
 }
 
 .index__hero-logo {
-  background: var(--red-gradient);
+  /* background: var(--red-gradient); */
+  background-image: url(../images/logo.png);
+  background-size: cover;
+  background-position: 0;
   padding: 5px 110px;
   margin: 0;
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: absolute;
+  align-items: center;
+  justify-content: space-between;
   bottom: -120px;
   box-shadow: var(--box-shadow);
   border: 1px solid #1e1e1e;
+  height: 300px;
 }
 
 .call-to-action {
@@ -133,15 +137,9 @@ section {
   color: blue;
 }
 
-.index__hero-logo img {
-  width: 150px;
-  height: 150px;
-  padding: 0;
-  margin: 0;
-}
-
 .index__hero-logo p {
-  font-size: 20px;
+  font-size: 18px;
+  color: rgb(5, 51, 255);
   text-wrap: nowrap;
 }
 
@@ -269,6 +267,8 @@ section {
 
   .index__hero-logo {
     bottom: -85px !important;
+    background-position: 10;
+    height: 500px;
   }
 
   .services {
