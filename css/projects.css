@@ -117,8 +117,10 @@
 }
 
 .projectImg {
-  width: 100%;
-  height: 1200px !important;
+  width: 99%;
+  height: 1250px !important;
+  padding: 5px;
+  box-shadow: var(--box-shadow);
 }
 
 .main-section-title {
