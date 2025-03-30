@@ -70,7 +70,7 @@
 
 .previewNote {
   font-size: 14px;
-  color: rgb(0, 179, 255);
+  color: rgb(255, 0, 0);
   text-transform: capitalize;
 }
 
@@ -78,7 +78,7 @@
   padding: 0;
   margin: 0;
   background-color: transparent;
-  color: rgb(0, 255, 0);
+  color: blue;
 }
 
 .hiddenText {
