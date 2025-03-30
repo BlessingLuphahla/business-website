@@ -402,6 +402,19 @@ section {
   }
 }
 
+.get-a-quote {
+  font-size: 18px;
+  background: var(--dark-red);
+  text-decoration: none;
+  text-transform: lowercase;
+  color: white;
+  font-weight: 200;
+  padding: 10px 12px;
+  position: relative;
+  top: 20px;
+  cursor: pointer;
+}
+
 @media (max-width: 480px) {
   .index__hero {
     width: 100%;
