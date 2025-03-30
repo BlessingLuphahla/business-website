@@ -71,6 +71,22 @@
   cursor: pointer;
 }
 
+.download-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+}
+
+.download-services a {
+  background-color: rgba(0, 225, 255, 0.692);
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #1e1e1e;
+}
+
 @media (max-width: 768px) {
   .sectionWrapper {
     margin: 0;
@@ -99,6 +115,4 @@
   .services-title {
     font-size: 20px;
   }
-
-
 }

@@ -121,8 +121,8 @@ section {
   bottom: -120px;
   box-shadow: var(--box-shadow);
   border: 1px solid #1e1e1e;
-  height: 300px;
-  width: 170px;
+  height: 320px;
+  width: 200px;
 }
 
 .call-to-action {
