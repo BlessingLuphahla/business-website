@@ -78,7 +78,7 @@ section {
   right: 0;
   width: 100%;
   z-index: 10;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,7 +228,7 @@ section {
 }
 
 .get-started {
-  --color: var(--dark-red);
+  --color: white;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
