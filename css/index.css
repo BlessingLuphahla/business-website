@@ -106,23 +106,18 @@ section {
 }
 
 .index__hero-logo {
-  /* background: var(--red-gradient); */
-  background-image: url(../images/logo.png);
-  background-size: cover;
-  background-position: 0;
+  background: var(--red-gradient);
   padding: 5px 110px;
   margin: 0;
   color: white;
   display: flex;
   flex-direction: column;
-  position: absolute;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: absolute;
   bottom: -120px;
   box-shadow: var(--box-shadow);
   border: 1px solid #1e1e1e;
-  height: 320px;
-  width: 200px;
 }
 
 .call-to-action {
@@ -138,15 +133,16 @@ section {
   color: blue;
 }
 
-.index__hero-logo p {
-  font-size: 30px;
+.index__hero-logo img {
+  width: 150px;
+  height: 150px;
   padding: 0;
-  letter-spacing: 2px;
-  color: white;
+  margin: 0;
+}
+
+.index__hero-logo p {
+  font-size: 20px;
   text-wrap: nowrap;
-  position: relative;
-  position: relative;
-  bottom: 10px;
 }
 
 .body-display-flex {
@@ -272,24 +268,7 @@ section {
   }
 
   .index__hero-logo {
-    height: 130px !important;
-    bottom: -90px !important;
-    background-position: 10;
-    opacity: 0.9;
-    width: 100px !important;
-  }
-
-  .index__hero-logo p {
-    bottom: 20px;
-    box-shadow: none;
-  }
-
-  .index__hero-logo a {
-    background-color: #898f9f;
-    margin-top: 88px;
-    font-weight: 200;
-    letter-spacing: 2px;
-    width: max-content !important;
+    bottom: -85px !important;
   }
 
   .services {
@@ -400,19 +379,6 @@ section {
     margin: 5px 0;
     line-height: 32px;
   }
-}
-
-.get-a-quote {
-  font-size: 18px;
-  background: var(--dark-red);
-  text-decoration: none;
-  text-transform: lowercase;
-  color: white;
-  font-weight: 200;
-  padding: 10px 12px;
-  position: relative;
-  top: 20px;
-  cursor: pointer;
 }
 
 @media (max-width: 480px) {
