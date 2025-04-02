@@ -240,8 +240,14 @@ section {
 }
 
 .index__hero-text {
-  color:var(--dark-red);
+  color: var(--dark-red);
   font-weight: 900;
+}
+
+body > section.services > div > div > p > a {
+  background-color: var(--dark-red);
+  color: white;
+  padding: 10px 20px;
 }
 
 /* Media Queries */
