@@ -250,6 +250,71 @@ body > section.services > div > div > p > a {
   padding: 10px 20px;
 }
 
+.testimonials {
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  width: 100%;
+  align-items: center;
+  color: white;
+}
+
+.testimonials-title {
+  color: var(--dark-red);
+  font-size: 30px;
+}
+
+.testimonial {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #1e1e1e;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--red-gradient);
+}
+
+.testimonial-review {
+  width: 90%;
+}
+
+.testimonial-review::after,
+.testimonial-review::before {
+  padding: 5px;
+  color: rgba(0, 195, 255, 0.705);
+  font-size: 25px;
+}
+
+.testimonial-review::after {
+  content: "¶";
+}
+
+.testimonial-review::before {
+  content: "⁋";
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonial-google-review {
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  color: var(--dark-red);
+  font-size: 12px !important;
+  border-radius: 15px;
+}
+
 /* Media Queries */
 @media (max-width: 1385px) {
   .services {
@@ -389,6 +454,30 @@ body > section.services > div > div > p > a {
     font-size: 15px;
     margin: 5px 0;
     line-height: 32px;
+  }
+
+  .testimonials {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonials-title {
+    color: var(--dark-red);
+    font-size: 30px;
+  }
+
+  .testimonial {
+    width: 98%;
+    padding: 0;
+    height: 340px;
+    border: 1px solid #1e1e1e;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--red-gradient);
   }
 }
 
