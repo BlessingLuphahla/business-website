@@ -87,13 +87,13 @@ section {
 }
 
 .index__hero-text h1 {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold;
 }
 
 .index__hero-text p {
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 20px;
 }
 
@@ -134,7 +134,7 @@ section {
 }
 
 .index__hero-logo img {
-  width: 150px;
+  width: 210px;
   height: 150px;
   padding: 0;
   margin: 0;
@@ -228,15 +228,20 @@ section {
 }
 
 .get-started {
-  --color: white;
+  --color: var(--dark-red);
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   color: var(--color);
   border: 1px solid var(--color);
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   box-shadow: var(--box-shadow);
+}
+
+.index__hero-text {
+  color:var(--dark-red);
+  font-weight: 900;
 }
 
 /* Media Queries */

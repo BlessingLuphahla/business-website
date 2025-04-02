@@ -80,8 +80,8 @@
 }
 
 .download-services a {
-  background-color: rgba(0, 225, 255, 0.692);
-  color: black;
+  background-color: var(--dark-red);
+  color: white;
   text-decoration: none;
   padding: 10px 20px;
   border: 1px solid #1e1e1e;
