@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const contactLinks = {
     email:
-      "mailto: luphahlablessingthamsanqa@gmail.com?subject=Business Inquiry&body=Hi Luxury Digital Agency ",
+      "mailto: luphahlablessingthamsanqa@gmail.com?subject=Business Inquiry&body=Hi Luxovate Digital ",
     linkedin: "",
     facebook: "https://www.facebook.com/share/1AEXQjig4K/",
     phone: "tel:+263788793302",
-    whatsapp: "https://wa.me/27681595429?text=Hi Luxury Digital Agency ",
+    whatsapp: "https://wa.me/27681595429?text=Hi Luxovate Digital ",
   };
 
   const elements = {

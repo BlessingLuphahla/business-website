@@ -1,10 +1,10 @@
-# Luxury Digital Agency
+# Luxovate Digital
 
 ## Things to note
 The backend part of email processessing using flask was created and hosted seperately for security reasons
 
 ## About
-Luxury Digital Agency is a digital solutions company that specializes in creating innovative and effective digital experiences for businesses. Our goal is to empower your business with solutions that transform your vision into reality and position you for long-term success.
+Luxovate Digital is a digital solutions company that specializes in creating innovative and effective digital experiences for businesses. Our goal is to empower your business with solutions that transform your vision into reality and position you for long-term success.
 
 ## Project Overview
 This repository contains the source code for our company website, which showcases our services, portfolio, and contact information. The website is built using HTML, CSS, and JavaScript, and is designed to be responsive and accessible on various devices.
