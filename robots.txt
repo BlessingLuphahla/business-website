@@ -1,4 +1,4 @@
 user-agent:*
 Allow: /
 
-Sitemap: https://luxurydigitalagency.vercel.app/sitemap.xml
+Sitemap: https://luxovatedigital.vercel.app/sitemap.xml

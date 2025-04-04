@@ -31,7 +31,7 @@ We welcome contributions to this project! If you'd like to contribute, please fo
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Contact
-If you have any questions or need help with this project, please don't hesitate to contact us at [info@luxurydigitalagency.com](mailto:luphahlablessingthamsanqa@gmail.com).
+If you have any questions or need help with this project, please don't hesitate to contact us at [info@luxovatedigital.com](mailto:luphahlablessingthamsanqa@gmail.com).
 
 ## Acknowledgments
 We'd like to thank the following individuals and organizations for their contributions to this project:
