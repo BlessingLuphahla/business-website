@@ -2,6 +2,7 @@
   width: 100%;
   height: max-content;
   padding: 20px 0px;
+  background: var(--light-gray-bg);
 }
 
 .projectWrapper {
