@@ -8,11 +8,18 @@
   margin: 0;
   color: var(--dark-red);
   background: var(--light-gray-bg);
+  flex-direction: column;
+}
+
+.mainBlog h3 {
+  font-size: 35px;
+  padding: 0;
+  margin: 0;
+  margin: 15px;
 }
 
 .mainBlogWrapper {
   width: 90%;
-  margin: 20px 0;
   flex-wrap: wrap;
   padding: 20px;
   display: flex;
@@ -85,7 +92,6 @@
   .blog-post header img {
     height: 320px;
   }
-
 }
 
 @media (max-width: 480px) {
