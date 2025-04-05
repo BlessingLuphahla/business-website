@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
            <div class="previewText">
             <div class="close">×</div>
               <h2 class="previewProjectTitle">${title}</h2>
-              <div class="previewNote">Please Note That Due To Our <a class="previewNoteLink" href="privacy policy.html">Privacy Policy</a> We Cannot display actual projects of clients, just a similar project with core features</div>
+              <div class="previewNote">Please Note That Due To Our <a class="previewNoteLink" href="privacy-policy.html">Privacy Policy</a> We Cannot display actual projects of clients, just a similar project with core features</div>
             <div class="previewDesc">${
               desc + hiddenTextElement.textContent
             }</div>

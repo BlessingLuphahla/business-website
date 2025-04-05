@@ -5,7 +5,7 @@ https://luxovatedigital.vercel.app//contact.html
 https://luxovatedigital.vercel.app/marketing.html
 https://luxovatedigital.vercel.app/development.html
 https://luxovatedigital.vercel.app/get-a-quote.html
-https://luxovatedigital.vercel.app/request port.html
-https://luxovatedigital.vercel.app/t's and c's.html
-https://luxovatedigital.vercel.app/privacy policy.html
+https://luxovatedigital.vercel.app/request-port.html
+https://luxovatedigital.vercel.app/terms-and-conditions.html
+https://luxovatedigital.vercel.app/privacy-policy.html
 https://luxovatedigital.vercel.app/software.html
