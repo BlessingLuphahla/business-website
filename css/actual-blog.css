@@ -1,0 +1,19 @@
+.actualBlog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.actualBlogWrapper {
+  width: 80%;
+  background: var(--red-gradient);
+  margin: 20px 0;
+  line-height: 34px;
+  padding: 10px;
+  color: white;
+}
+
+.actualBlogWrapper img {
+    width: 100%;
+}
