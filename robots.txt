@@ -1,5 +1,4 @@
 user-agent:*
 Allow: /
 
-Sitemap: https://luxovatedigital.vercel.app/sitemap.txt
-Sitemap: https://luxovatedigital.vercel.app/sitemap.xml
+Sitemap: https://luxovatedigital.vercel.app/sitemap1.xml
