@@ -106,7 +106,8 @@ section {
 }
 
 .index__hero-logo {
-  background: #830606;
+  background: var(--red-gradient);
+  /* background: #c70101; */
   padding: 5px 110px;
   margin: 0;
   color: white;
@@ -123,6 +124,7 @@ section {
 .call-to-action {
   width: 95%;
   box-shadow: var(--box-shadow);
+  background-color: rgb(192, 3, 192);
 }
 
 .introContainer a {
@@ -141,8 +143,11 @@ section {
 }
 
 .index__hero-logo p {
-  font-size: 20px;
+  font-size: 25px;
   text-wrap: nowrap;
+  margin: 15px 0;
+  letter-spacing: 5px;
+  padding: 0;
 }
 
 .body-display-flex {
@@ -642,6 +647,7 @@ body > section.services > div > div > p > a {
     font-size: 12px;
     text-align: center;
     font-family: Roboto-Bold;
+    margin: 10px 0;
   }
 
   .call-to-action {
