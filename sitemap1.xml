@@ -6,6 +6,11 @@
     <priority>1.00</priority>
   </url>
   <url>
+    <loc>https://www.luxovatedigital.co.zw/index.html</loc>
+    <lastmod>2025-04-07</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
     <loc>https://www.luxovatedigital.co.zw/about.html</loc>
     <lastmod>2025-04-07</lastmod>
     <priority>0.80</priority>
@@ -54,5 +59,31 @@
     <loc>https://www.luxovatedigital.co.zw/software.html</loc>
     <lastmod>2025-04-07</lastmod>
     <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.luxovatedigital.co.zw/blogs/</loc>
+    <lastmod>2025-04-07</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.luxovatedigital.co.zw/blogs/static-sites.html</loc>
+    <lastmod>2025-04-07</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.luxovatedigital.co.zw/blogs/smb-strug-biz.html</loc>
+    <lastmod>2025-04-07</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.luxovatedigital.co.zw/blogs/every-biz-needs-site.html</loc>
+    <lastmod>2025-04-07</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.luxovatedigital.co.zw/blogs/blogging-aint-dead.html</loc>
+    <lastmod>2025-04-07</lastmod>
+    <priority>0.80</priority>
   </url>
 </urlset>
