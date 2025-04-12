@@ -1,9 +1,0 @@
-{
-    "redirects": [
-      {
-        "source": "/(.*)",
-        "destination": "https://www.luxovatedigital.co.zw/$1",
-        "permanent": true
-      }
-    ]
-  }
