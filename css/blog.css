@@ -11,6 +11,11 @@
   flex-direction: column;
 }
 
+hr {
+  width: 70%;
+  color: gray;
+}
+
 .mainBlog h3 {
   font-size: 35px;
   padding: 0;
