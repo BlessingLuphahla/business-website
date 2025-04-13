@@ -54,6 +54,11 @@ body {
   flex-direction: column;
 }
 
+hr {
+  width: 70%;
+  color: gray;
+}
+
 .header {
   background: var(--header-bg);
   width: 100%;
