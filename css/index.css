@@ -118,6 +118,7 @@ section {
   bottom: -120px;
   box-shadow: var(--box-shadow);
   border: 2px solid var(--dark-red);
+  text-transform: uppercase;
 }
 
 .call-to-action {
@@ -125,7 +126,9 @@ section {
   box-shadow: var(--box-shadow);
   background-color: rgb(192, 3, 192);
   border: 1px solid blue;
-  color: orange;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3.5px;
 }
 
 .introContainer a {
@@ -613,6 +616,7 @@ body > section.services > div > div > p > a {
 
   .call-to-action {
     padding: 10px !important;
+    letter-spacing: 1.5px;
   }
 
   .introContainer {
