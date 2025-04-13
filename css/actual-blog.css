@@ -8,11 +8,16 @@
 
 .actualBlogWrapper {
   width: 80%;
-  background: var(--red-gradient);
+  background-color: var(--dark-red);
   margin: 20px 0;
   line-height: 34px;
   padding: 10px;
   color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .actualBlogWrapper img {
@@ -40,10 +45,10 @@
 
 @media (max-width: 768px) {
   .actualBlogWrapper {
-    width: 92%;
+    width: 98%;
     margin: 20px 0;
-    line-height: 34px;
-    padding: 10px;
+    padding: 0;
+    line-height: 32px;
   }
 
   .actualBlogWrapper img {
