@@ -258,12 +258,15 @@ hr {
 }
 
 .profile-pic {
-  background: url("../images/software-2.jpg");
-  width: 95px;
-  height: 95px;
-  background-size: cover;
-  border-radius: 50%;
-  background-color: var(--dark-red);
+  background: url("../images/mobile-phones.jpg");
+  width: 65px;
+  height: 65px;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(226, 226, 226, 0.35);
+  border: 2px solid var(--dark-red);
+  padding: 10px;
 }
 
 .message-preview {
