@@ -291,7 +291,7 @@ body > section.services > div > div > p > a {
 
 .testimonial {
   width: 500px;
-  height: 300px;
+  height: 350px;
   border: 1px solid #1e1e1e;
   padding: 10px;
   box-shadow: var(--box-shadow);
@@ -304,6 +304,9 @@ body > section.services > div > div > p > a {
 
 .testimonial-review {
   width: 90%;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
 
 .testimonial-review::after,
