@@ -688,6 +688,11 @@ body > section.services > div > div > p > a {
 }
 
 @media (max-width: 768px) {
+  .testimonialsWrapper {
+    gap: 15px;
+    flex-direction: column;
+  }
+
   .mainBlogWrapper {
     width: 100%;
     margin: 5px 0;
