@@ -260,7 +260,7 @@ body > section.services > div > div > p > a {
 }
 
 .testimonials {
-  padding: 10px;
+  padding: 10px 0;
   margin-top: 15px;
   margin-bottom: 25px;
   display: flex;
@@ -269,6 +269,19 @@ body > section.services > div > div > p > a {
   width: 100%;
   align-items: center;
   color: white;
+}
+
+.testimonialsWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.testimonial-location {
+  color: rgb(0, 255, 0);
+  font-size: 12px;
 }
 
 .testimonials-title {
