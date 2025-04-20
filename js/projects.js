@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
       mainSection.appendChild(projectPreview);
 
       const image = el.firstElementChild.getAttribute("src");
-      console.log(image);
 
       const title =
         el.firstElementChild.nextElementSibling.firstElementChild.textContent;
