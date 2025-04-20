@@ -508,6 +508,11 @@ body > section.services > div > div > p > a {
     --hero-image-height: 310px;
   }
 
+  .get-started {
+    padding: 10px;
+    font-size: 12px;
+  }
+
   .blog-videos {
     margin: 0;
     padding: 0;
