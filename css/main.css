@@ -125,7 +125,7 @@ hr {
 
 .nav__item {
   color: var(--text-color);
-  font-size: calc(var(--header-title-font-size) - 5px);
+  font-size: calc(var(--header-title-font-size) - 6px);
   font-weight: 100;
   margin-left: 20px;
   text-decoration: none;
@@ -212,7 +212,7 @@ hr {
 }
 
 .active {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 900;
   border-radius: 5px;
 }
