@@ -8,10 +8,10 @@ open.addEventListener("click", function () {
   if (!isOpen) {
     menu.style.display = "flex";
     isOpen = true;
-    open.src = "images/close-burger.svg";
+    open.src = "/images/close-burger.svg";
   } else {
     menu.style.display = "none";
     isOpen = false;
-    open.src = "images/ham-burger.svg";
+    open.src = "/images/ham-burger.svg";
   }
 });
