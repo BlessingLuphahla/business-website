@@ -419,9 +419,10 @@ hr {
   }
 
   .nav__item {
-    font-size: 15px !important;
+    font-size: 20px !important;
     font-weight: 500;
     color: var(--dark-red);
+    margin: 2px;
   }
 
   .close-btn {

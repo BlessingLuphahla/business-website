@@ -817,7 +817,8 @@ body > section.services > div > div > p > a {
   }
 
   .index__hero-text p {
-    font-size: 12px;
+    font-size: 14px;
+    width: 90%;
   }
 
   .services__item--development {
