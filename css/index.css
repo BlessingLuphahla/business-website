@@ -487,8 +487,6 @@ body > section.services > div > div > p > a {
 
 .testimonial-video {
   display: none;
-  width: 200px;
-  height: 200px;
   background-color: rgba(0, 0, 0, 0.45);
   position: absolute;
   width: 100%;
@@ -498,10 +496,12 @@ body > section.services > div > div > p > a {
 }
 
 .testimonial-video-wrapper {
-  width: 85%;
-  height: 85%;
-  position: relative;
-  background-color: var(--dark-red);
+  width: max-content;
+  height: 60%;
+  position: absolute;
+  background-color: #770505cd;
+  box-shadow: var(--box-shadow);
+  padding: 70px;
 }
 
 .testimonial-video-close {
@@ -512,6 +512,11 @@ body > section.services > div > div > p > a {
   font-size: 40px;
   color: white;
   cursor: pointer;
+}
+
+.testimonial-actual-video {
+  width: auto;
+  height: 100%;
 }
 
 /* Media Queries */
@@ -701,7 +706,7 @@ body > section.services > div > div > p > a {
   .testimonial {
     width: 98%;
     padding: 0;
-    height: 340px;
+    height: 400px;
     border: 1px solid #1e1e1e;
     box-shadow: var(--box-shadow);
     display: flex;
@@ -722,6 +727,31 @@ body > section.services > div > div > p > a {
     word-spacing: 1px;
     letter-spacing: 1.2px;
     line-height: 1.6;
+  }
+
+  .testimonial-video-wrapper {
+    width: max-content;
+    height: 380px;
+    position: relative;
+    background-color: #770505cd;
+    box-shadow: var(--box-shadow);
+    padding: 40px;
+    bottom: 0;
+  }
+
+  .testimonial-video-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .testimonial-actual-video {
+    width: auto;
+    height: 100%;
   }
 }
 
