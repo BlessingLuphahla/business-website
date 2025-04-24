@@ -336,8 +336,8 @@ body > section.services > div > div > p > a {
   border: none;
   background-color: white;
   color: var(--dark-red);
-  font-size: 12px !important;
-  border-radius: 15px;
+  font-size: 14px !important;
+  font-weight: bold;
 }
 
 .mainBlog {
