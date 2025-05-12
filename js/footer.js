@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const contactLinks = {
     email:
-      "mailto: luphahlablessingthamsanqa@gmail.com?subject=Business Inquiry&body=Hi Luxovate Digital ",
+      "mailto: luxovatedigital@gmail.com?subject=Business Inquiry&body=Hi Luxovate Digital ",
     linkedin: "",
     facebook: "https://www.facebook.com/share/1AEXQjig4K/",
     phone: "tel:+263788793302",
