@@ -579,7 +579,7 @@ body > section.services > div > div > p > a {
   }
 
   .index__hero-logo {
-    bottom: -85px !important;
+    bottom: -120px !important;
   }
 
   .services {
@@ -667,7 +667,7 @@ body > section.services > div > div > p > a {
   }
 
   .index__hero-text p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .call-to-action {
@@ -842,7 +842,7 @@ body > section.services > div > div > p > a {
     width: 100px;
     height: 120px;
     padding: 15px 60px;
-    bottom: -60px;
+    bottom: -30px;
   }
 
   .index__hero-logo img {
@@ -878,8 +878,10 @@ body > section.services > div > div > p > a {
   }
 
   .index__hero-text p {
-    font-size: 14px;
-    width: 90%;
+    font-size: 15px;
+    width: 94%;
+    line-height: 1.7;
+    padding: 15px;
   }
 
   .services__item--development {
